@@ -1,825 +1,198 @@
-<head>
-    <meta charset="utf-8">
-    <meta name="author" content="Eli Takamoto">
-    <meta name="discription" content="test lol">
-    <link rel="stylesheet" href="style.css">
-</head>
-
 
 <!DOCTYPE html>
-
-    <html>
-        <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-body {
-  font-family: "Lato", sans-serif;
-}
-
-
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
+<html lang="en">
+<head>
+	<head>
+    <meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="test lol">
+  
 </head>
-<body>
+    <meta charset="UTF-8">
 
-<div class="sidenav">
-    <a href="index.html">Home Page</a>
-  <a href="page2.html">Itoh Fujino</a>
-  <a href="page3.html">Cards</a>
-</div>
+    <title>Riddle Rosehearts | Twisted Wonderland Wiki</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for clean typography -->
+   <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom styles to ensure Inter font is applied and provide a base */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #374151; /* Dark gray text */
+        }
+        /* Style for the table in infobox */
+        .infobox-table th, .infobox-table td {
+            padding: 0.5rem 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb; /* Light border */
+        }
+        .infobox-table th {
+            width: 35%; /* Adjust width for labels */
+            font-weight: 500;
+            color: #1f2937; /* Slightly darker label text */
+        }
+        .infobox-table tr:last-child td,
+        .infobox-table tr:last-child th {
+            border-bottom: none; /* No border for the last row */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="min-h-screen flex flex-col">
 
-<div class="main">
+        <!-- Header Section -->
+        <header class="bg-gradient-to-r from-red-800 to-red-600 text-white p-4 shadow-lg">
+            <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+                <h1 class="text-3xl font-bold mb-2 md:mb-0">Riddle Rosehearts</h1>
+                <nav>
+                    <ul class="flex space-x-4">
+                        <li><a href="#" class="hover:text-red-200 transition-colors duration-200">Main Page</a></li>
+                        <li><a href="#" class="hover:text-red-200 transition-colors duration-200">Characters</a></li>
+                        <li><a href="#" class="hover:text-red-200 transition-colors duration-200">Locations</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-</div>
-   
+        <!-- Main Content Area with Sidebar -->
+        <div class="container mx-auto p-4 lg:p-6 flex flex-col lg:flex-row gap-6 flex-grow">
+            <!-- Sidebar -->
+            <aside class="lg:w-1/4 w-full flex flex-col gap-6">
+                <!-- Table of Contents / Navigation -->
+                <div class="bg-white p-5 rounded-xl shadow-md border border-gray-200">
+                    <h2 class="text-xl font-semibold mb-4 text-gray-800">Contents</h2>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><a href="#summary" class="block py-1 px-3 rounded-md hover:bg-red-100 hover:text-red-700 transition-colors duration-200">1. Summary</a></li>
+                        <li><a href="#appearance" class="block py-1 px-3 rounded-md hover:bg-red-100 hover:text-red-700 transition-colors duration-200">2. Appearance</a></li>
+                        <li><a href="#personality" class="block py-1 px-3 rounded-md hover:bg-red-100 hover:text-red-700 transition-colors duration-200">3. Personality</a></li>
+                        <li><a href="#abilities" class="block py-1 px-3 rounded-md hover:bg-red-100 hover:text-red-700 transition-colors duration-200">4. Unique Magic & Abilities</a></li>
+                        <li><a href="#background" class="block py-1 px-3 rounded-md hover:bg-red-100 hover:text-red-700 transition-colors duration-200">5. Background</a></li>
+                        <li><a href="#trivia" class="block py-1 px-3 rounded-md hover:bg-red-100 hover:text-red-700 transition-colors duration-200">6. Trivia</a></li>
+                        <li><a href="#gallery" class="block py-1 px-3 rounded-md hover:bg-red-100 hover:text-red-700 transition-colors duration-200">7. Gallery</a></li>
+                    </ul>
+                </div>
 
-</html> 
+                <!-- Character Infobox -->
+                <div class="bg-white p-5 rounded-xl shadow-md border border-gray-200">
+                    <h2 class="text-2xl font-bold text-center mb-4 text-red-700">Riddle Rosehearts</h2>
+                    <div class="text-center mb-4">
+                        <!-- Placeholder image for Riddle Rosehearts -->
+                        <img src="https://placehold.co/400x600/A30000/FFFFFF?text=Riddle+Rosehearts" alt="Riddle Rosehearts" class="w-full max-w-[200px] mx-auto rounded-lg shadow-md border-2 border-red-300">
+                    </div>
+                    <table class="infobox-table w-full text-sm">
+                        <tbody>
+                            <tr>
+                                <th>Name</th>
+                                <td>Riddle Rosehearts</td>
+                            </tr>
+                            <tr>
+                                <th>Gender</th>
+                                <td>Male</td>
+                            </tr>
+                            <tr>
+                                <th>Birthday</th>
+                                <td>August 24</td>
+                            </tr>
+                            <tr>
+                                <th>Star Sign</th>
+                                <td>Virgo</td>
+                            </tr>
+                            <tr>
+                                <th>Homeland</th>
+                                <td>Rose Kingdom</td>
+                            </tr>
+                            <tr>
+                                <th>Dorm</th>
+                                <td>Heartslabyul</td>
+                            </tr>
+                            <tr>
+                                <th>Class</th>
+                                <td>1-A</td>
+                            </tr>
+                            <tr>
+                                <th>Occupation</th>
+                                <td>Dorm Leader</td>
+                            </tr>
+                            <tr>
+                                <th>Unique Magic</th>
+                                <td>Off With Your Head!</td>
+                            </tr>
+                            <tr>
+                                <th>Voice Actor</th>
+                                <td>Natsuki Hanae</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </aside>
 
-<main class="page__main" lang="en">
-					<div class="page-side-tools__wrapper">
-						<div class="page-side-tools">
-							<button class="page-side-tool content-size-toggle" name="content-size-toggle" aria-label="Expand" data-wds-tooltip="Expand" data-wds-tooltip-position="right" data-tooltip-attached="1">
-																	<svg class="wds-icon wds-icon-small"><use xlink:href="#wds-icons-zoom-in-small"></use></svg>															</button><div class="sticky-toc-wrapper" aria-labelledby="mw-sticky-toc-heading"><button class="page-side-tool sticky-toc-toggle" data-wds-tooltip="Contents" data-wds-tooltip-position="right" data-tooltip-attached="1" aria-label="Contents"><svg class="wds-icon wds-icon-small toc-small-icon">
-<use href="#wds-icons-bullet-list-small"></use>
-</svg></button><div id="sticky-toc" class="toc sticky-toc wds-is-hidden" role="navigation"><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-sticky-toc-heading">Contents</h2><svg class="wds-icon wds-icon-tiny sticky-toc-close">
-<use href="#wds-icons-close-tiny"></use>
-</svg></div>
-<ul>
-<li class="toclevel-1 tocsection-1"><a href="#Appearance"><span class="tocnumber">1</span> <span class="toctext">Appearance</span></a>
-<ul>
-<li class="toclevel-2 tocsection-2"><a href="#Dorm_Uniform"><span class="tocnumber">1.1</span> <span class="toctext">Dorm Uniform</span></a></li>
-</ul>
-</li>
-<li class="toclevel-1 tocsection-3"><a href="#Personality"><span class="tocnumber">2</span> <span class="toctext">Personality</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="#Background"><span class="tocnumber">3</span> <span class="toctext">Background</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="#Magical_Skills"><span class="tocnumber">4</span> <span class="toctext">Magical Skills</span></a>
-<ul>
-<li class="toclevel-2 tocsection-6"><a href="#Signature_Spell"><span class="tocnumber">4.1</span> <span class="toctext">Signature Spell</span></a></li>
-</ul>
-</li>
-<li class="toclevel-1 tocsection-7"><a href="#Trivia"><span class="tocnumber">5</span> <span class="toctext">Trivia</span></a></li>
-<li class="toclevel-1 tocsection-8"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-9"><a href="#Navigation"><span class="tocnumber">7</span> <span class="toctext">Navigation</span></a></li>
-</ul>
-</div></div>
-															<a class="page-side-tool page-side-edit" href="/wiki/Riddle_Rosehearts?action=edit" id="ca-viewsource-side-tool" aria-label="View source" data-tracking-label="ca-viewsource-side-tool" data-wds-tooltip="View source" data-wds-tooltip-position="right" data-tooltip-attached="1">
-									<svg class="wds-icon wds-icon-small"><use xlink:href="#wds-icons-lock-small"></use></svg>								</a>
-													</div>
-					</div>
-					
-	<div class="page-header" id="page-header" tabindex="-1">
-		<div class="page-header__top">
-			<div class="page-header__meta">
-									
-<div class="page-header__categories">
-	<span class="page-header__categories-in">in:</span>
-	<a href="/wiki/Category:Characters" title="Category:Characters" data-tracking-label="categories-top-more-0">Characters</a>, <a href="/wiki/Category:Heartslabyul_members" title="Category:Heartslabyul members" data-tracking-label="categories-top-more-1">Heartslabyul members</a>, <a href="/wiki/Category:Riddle_Rosehearts" title="Category:Riddle Rosehearts" data-tracking-label="categories-top-more-2">Riddle Rosehearts</a>, 			<div class="wds-dropdown page-header__categories-dropdown">
-			<span>and</span>
-			<a class="wds-dropdown__toggle" data-tracking="categories-more">4 more</a>
-			<div class="wds-dropdown__content page-header__categories-dropdown-content wds-is-left-aligned">
-				<ul class="wds-list wds-is-linked">
-											<li>
-							<a href="/wiki/Category:Night_Raven_College_Students" title="Category:Night Raven College Students" data-tracking-label="categories-top-more-3">Night Raven College Students</a>						</li>
-											<li>
-							<a href="/wiki/Category:Queendom_of_Roses_Characters" title="Category:Queendom of Roses Characters" data-tracking-label="categories-top-more-4">Queendom of Roses Characters</a>						</li>
-											<li>
-							<a href="/wiki/Category:Overblotted_Victims" title="Category:Overblotted Victims" data-tracking-label="categories-top-more-5">Overblotted Victims</a>						</li>
-											<li>
-							<a href="/wiki/Category:Human" title="Category:Human" data-tracking-label="categories-top-more-6">Human</a>						</li>
-									</ul>
-			</div>
-		</div>
-	</div>
-								
-			</div>
-										
-<div class="page-header__languages">
-	<div class="wds-dropdown">
-		<div class="wds-dropdown__toggle">
-			English<svg class="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron"><use xlink:href="#wds-icons-dropdown-tiny"></use></svg>		</div>
-		<div class="wds-dropdown__content">
-			<ul class="wds-list wds-is-linked">
-									<li>
-						<a href="https://twisted-wonderland.fandom.com/ru/wiki/%D0%A0%D0%B8%D0%B4%D0%B4%D0%BB_%D0%A0%D0%BE%D1%83%D0%B7%D1%85%D0%B0%D1%80%D1%82%D1%81" data-tracking-label="lang-ru">Русский</a>
-					</li>
-							</ul>
-		</div>
-	</div>
-</div>
-					</div>
-		<div class="page-header__bottom">
-			<div class="page-header__title-wrapper">
-				<h1 class="page-header__title" id="firstHeading">
-					<span class="mw-page-title-main">Riddle Rosehearts</span>				</h1>
-																</div>
-			<div class="page-header__actions" id="p-views">
-				
-									<a class="wds-button wds-is-text page-header__action-button" data-tracking-label="comments-button" href="#articleComments">
-						<div id="article-comments-button" class="button-counter" style="opacity: 1;">41</div>
-						<svg class="wds-icon wds-icon-small"><use xlink:href="#wds-icons-comment-small"></use></svg>					</a>
-				
-									<a class="wds-button wds-is-text page-header__action-button has-label" href="/wiki/Riddle_Rosehearts?action=edit" id="ca-viewsource" data-tracking-label="ca-viewsource" accesskey="e">
-						<svg class="wds-icon wds-icon-small"><use xlink:href="#wds-icons-lock-small"></use></svg>						View source					</a>
-				
-				
-									<div class="wds-dropdown">
-						<div role="button" class="wds-dropdown__toggle wds-button wds-is-text page-header__action-button" aria-label="Page Tools" aria-controls="p-cactions" data-tracking-label="dropdown-actions">
-							<svg class="wds-icon wds-icon-small"><use xlink:href="#wds-icons-more-small"></use></svg>						</div>
-						<div id="p-cactions" class="wds-dropdown__content wds-is-right-aligned wds-is-not-scrollable">
-							<ul class="wds-list wds-is-linked">
-																	<li>
-										<a id="ca-history" href="/wiki/Riddle_Rosehearts?action=history" data-tracking-label="ca-history-dropdown" accesskey="h">
-											History										</a>
-									</li>
-																	<li>
-										<a id="ca-purge" href="/wiki/Riddle_Rosehearts?action=purge" data-tracking-label="ca-purge-dropdown">
-											Purge										</a>
-									</li>
-																	<li>
-										<a id="ca-talk" href="/wiki/Talk:Riddle_Rosehearts?action=edit&amp;redlink=1" class="new" data-tracking-label="ca-talk-dropdown" accesskey="t">
-											Talk (0)										</a>
-									</li>
-															</ul>
-						</div>
-					</div>
-											</div>
-		</div>
-			</div>
-					<div id="content" class="page-content ve-init-mw-desktopArticleTarget-targetContainer">
-													<script data-name="featured-video-mapped-to-wiki">
-	(function () {
-		// we can't use mw.config here because it's too early so we need to pass this data in different way
-		const videoDetails = {
-			mapping: {"mediaId":"CR0MZ2ZP","connatixPlaylistId":"fa733fa7-0131-48d3-a444-611bc76031fe","impressionsPerSession":3,"isDefaultMapping":true},
-			impressionsPerSession: 3,
-		};
-		const videoBridgeCountries = ["AE","AG","AL","AM","AR","AT","AU","AZ","BA","BB","BD","BG","BH","BN","BO","BR","BS","BY","CA","CH","CL","CN","CO","CR","CU","CY","CZ","DE","DK","DO","DZ","EC","EE","EG","ES","FI","FR","GB","GE","GF","GG","GH","GP","GR","GT","GU","GY","HK","HN","HR","HU","ID","IE","IL","IM","IN","IQ","IR","IS","IT","JE","JM","JO","JP","KE","KG","KH","KR","KW","KY","KZ","LA","LB","LK","LT","LU","LV","LY","MA","MD","ME","MK","MM","MN","MO","MQ","MT","MU","MV","MX","MY","NG","NI","NO","NP","NZ","OM","PA","PE","PH","PK","PL","PR","PS","PT","PY","QA","RE","RO","RS","RU","SA","SC","SE","SG","SI","SK","SV","TD","TH","TN","TR","TT","TW","UA","US","UY","UZ","VE","VI","VN","ZA","ZW"];
-		const tier3VideoBridgeCountries = ["GB","BE","NL","DE","AU","MX","AR","FR","MD","CA","ES","IT","PE","CO","CL","NZ"];
-		let hasVideoOnPage = null;
+            <!-- Main Content -->
+            <main class="lg:w-3/4 w-full bg-white p-6 rounded-xl shadow-md border border-gray-200">
+                <section id="summary" class="mb-8">
+                    <h2 class="text-3xl font-bold text-red-700 mb-4 pb-2 border-b border-red-200">1. Summary</h2>
+                    <p class="mb-4 leading-relaxed">Riddle Rosehearts is the current leader of Heartslabyul Dorm at Night Raven College. Known for his strict adherence to rules and unwavering belief in maintaining order, he embodies the spirit of the Queen of Hearts' unyielding principles. Riddle is a diligent student who strives for perfection in all aspects of his life, often putting immense pressure on himself and those around him.</p>
+                    <p class="leading-relaxed">His character arc revolves around learning to balance his strictness with empathy and understanding, challenging his rigid worldview influenced by his upbringing. Despite his initially harsh demeanor, Riddle possesses a deep sense of responsibility and cares for his dorm members, albeit in his own unique way.</p>
+                </section>
 
-		function getCookieValue(cookieName) {
-			const cookieSplit = ('; ' + document.cookie).split('; ' + cookieName + '=');
-			return cookieSplit.length === 2 ? cookieSplit.pop().split(';').shift() : null;
-		}
+                <section id="appearance" class="mb-8">
+                    <h2 class="text-3xl font-bold text-red-700 mb-4 pb-2 border-b border-red-200">2. Appearance</h2>
+                    <p class="mb-4 leading-relaxed">Riddle has a slender build and stands at 165cm (5'5"). He has striking red hair styled in a neat bob cut, adorned with a small golden crown and black heart-shaped hair clips. His eyes are a piercing golden color. He is typically seen in the standard Night Raven College uniform, which he wears meticulously.</p>
+                    <p class="leading-relaxed">His Heartslabyul dorm uniform features a red and white color scheme with prominent heart motifs, reflecting the Queen of Hearts' aesthetic. He often carries a red magic pen that complements his dorm's theme.</p>
+                </section>
 
-		function hasMaxedOutPlayerImpressionsInWiki() {
-			const impressionsSoFar = Number(getCookieValue('playerImpressionsInWiki')) || 0;
-			const allowedImpressions = Number(videoDetails.impressionsPerSession);
+                <section id="personality" class="mb-8">
+                    <h2 class="text-3xl font-bold text-red-700 mb-4 pb-2 border-b border-red-200">3. Personality</h2>
+                    <p class="mb-4 leading-relaxed">Riddle is initially portrayed as an authoritarian and hot-headed individual, obsessed with rules and traditions. He believes that strict adherence to rules is the only way to achieve order and prevent chaos, stemming from his overly restrictive upbringing. He is quick to punish those who break even the most minor rules, often using his unique magic "Off With Your Head!" to collar offenders.</p>
+                    <p class="leading-relaxed">Beneath his rigid exterior, Riddle is a diligent, earnest, and somewhat insecure person. He genuinely wants to be a good leader and uphold the traditions of his dorm, but his methods are often counterproductive due to his lack of emotional understanding and his deep-seated trauma. Through the story, he gradually learns the importance of flexibility, empathy, and allowing others (and himself) to express themselves freely.</p>
+                </section>
 
-			return impressionsSoFar >= allowedImpressions;
-		}
+                <section id="abilities" class="mb-8">
+                    <h2 class="text-3xl font-bold text-red-700 mb-4 pb-2 border-b border-red-200">4. Unique Magic & Abilities</h2>
+                    <p class="mb-4 leading-relaxed">Riddle's unique magic is <strong class="text-red-600">"Off With Your Head!"</strong>, which allows him to place a magical collar on anyone, sealing their magic. This ability is a direct reference to the Queen of Hearts' command to behead those who displease her. He uses this power frequently to enforce rules and discipline within Heartslabyul dorm.</p>
+                    <ul class="list-disc list-inside space-y-2 mb-4 pl-4 leading-relaxed">
+                        <li><strong>Magical Proficiency:</strong> As a dorm leader, Riddle possesses strong magical abilities, particularly in offensive spells and precise magical control.</li>
+                        <li><strong>Leadership:</strong> Despite his flaws, he is a capable leader who manages his dorm effectively, ensuring all rules and traditions are followed.</li>
+                        <li><strong>Academic Excellence:</strong> Riddle is a top student at Night Raven College, demonstrating high intelligence and dedication to his studies.</li>
+                    </ul>
+                </section>
 
-		function getCountryCode() {
-			try {
-				return JSON.parse(decodeURIComponent(getCookieValue('Geo'))).country.toLowerCase();
-			} catch {
-				return null;
-			}
-		}
+                <section id="background" class="mb-8">
+                    <h2 class="text-3xl font-bold text-red-700 mb-4 pb-2 border-b border-red-200">5. Background</h2>
+                    <p class="mb-4 leading-relaxed">Riddle comes from a wealthy and highly disciplined household where his mother, a strict overbearing woman, controlled every aspect of his life. From a young age, Riddle was subjected to countless rules, strict study schedules, and a highly controlled diet. He was never allowed to make his own choices or enjoy simple pleasures, leading to a repressed and emotionally stunted childhood.</p>
+                    <p class="leading-relaxed">This upbringing instilled in him a deep-seated belief that rules are absolute and deviation leads to dire consequences. His position as Dorm Leader of Heartslabyul, a dorm founded on the Queen of Hearts' stringent rules, perfectly aligned with his ingrained philosophy, further reinforcing his rigid worldview.</p>
+                </section>
 
-		function isVideoBridgeAllowedForCountry() {
-			const countryCode = getCountryCode();
+                <section id="trivia" class="mb-8">
+                    <h2 class="text-3xl font-bold text-red-700 mb-4 pb-2 border-b border-red-200">6. Trivia</h2>
+                    <ul class="list-disc list-inside space-y-2 pl-4 leading-relaxed">
+                        <li>His signature line is "Off With Your Head!"</li>
+                        <li>He is known for his love of tarts, particularly strawberry tarts, a small rebellion against his mother's strict dietary rules.</li>
+                        <li>Riddle's overblot form is one of the most visually striking, featuring large chains and a menacing appearance.</li>
+                        <li>He is childhood friends with Trey Clover and Che'nya.</li>
+                        <li>His signature color motif is red, aligning with the Queen of Hearts.</li>
+                    </ul>
+                </section>
 
-			if (!countryCode) {
-				return false;
-			}
+                <section id="gallery" class="mb-8">
+                    <h2 class="text-3xl font-bold text-red-700 mb-4 pb-2 border-b border-red-200">7. Gallery</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <img src="https://placehold.co/400x300/8B0000/FFFFFF?text=Riddle+Art+1" alt="Riddle Art 1" class="w-full h-auto rounded-lg shadow-md border border-gray-300 transform transition-transform duration-300 hover:scale-105">
+                        <img src="https://placehold.co/400x300/CC0000/FFFFFF?text=Riddle+Art+2" alt="Riddle Art 2" class="w-full h-auto rounded-lg shadow-md border border-gray-300 transform transition-transform duration-300 hover:scale-105">
+                        <img src="https://placehold.co/400x300/AA0000/FFFFFF?text=Riddle+Art+3" alt="Riddle Art 3" class="w-full h-auto rounded-lg shadow-md border border-gray-300 transform transition-transform duration-300 hover:scale-105">
+                    </div>
+                </section>
+            </main>
+        </div>
 
-			// If it's a default mapping, then check the country whitelist from the default mapping.
-			if (videoDetails?.mapping?.isDefaultMapping) {
-				// If the wiki is classified as a tier3 wiki, then check the country whitelist from the tier3VideoBridge whitelist.
-				const allowedCountriesForTier3Wikis = tier3VideoBridgeCountries.map(function (allowedTier3CountryCode) {
-					return allowedTier3CountryCode.toLowerCase();
-				})
-
-				return allowedCountriesForTier3Wikis.indexOf(countryCode) !== -1;
-			} else {
-				// If not a default mapping wiki (so it's a wiki mapping), then check the country whitelist from the videoBridge whitelist
-				const allowedCountries = videoBridgeCountries.map(function (allowedCountryCode) {
-					return allowedCountryCode.toLowerCase();
-				});
-
-				return allowedCountries.indexOf(countryCode) !== -1;
-			}
-		}
-
-		window.fandomIsVideoPossible = function () {
-			if (hasVideoOnPage === null) {
-				hasVideoOnPage =
-					videoDetails.mapping &&
-					isVideoBridgeAllowedForCountry() &&
-					!hasMaxedOutPlayerImpressionsInWiki();
-			}
-
-			return hasVideoOnPage;
-		};
-
-		window.canPlayVideo = function () {
-			return window.fandomIsVideoPossible()
-		};
-
-		if (!window.canPlayVideo()) {
-			document.body.classList.add('no-featured-video');
-		} else {
-			document.body.classList.add('has-featured-video');
-		}
-	})();
-</script>
-							<div itemprop="video" itemscope="" itemtype="http://schema.org/VideoObject">
-			<meta itemprop="name" content="Netflix: Electric State Cast Interview">
-		<meta itemprop="duration" content="PT02M51S">
-		<meta itemprop="description" content="We sat down with the cast of Electric State, coming March 14th on Netflix.">
-		<meta itemprop="thumbnailUrl" content="https://cdn.jwplayer.com/v2/media/AFCYA1P7/poster.jpg?width=720">
-		<meta itemprop="contentURL" content="https://cdn.jwplayer.com/videos/AFCYA1P7-cSpmBcaY.mp4">
-		<meta itemprop="uploadDate" content="2025-03-10T17:00:00+00:00">
-		<div id="featured-video__player-container" class="featured-video-player-container"></div>
-</div>
-																		<div id="mw-content-text" class="mw-body-content"><!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="character-tabs"><div class="custom-tabs-default custom-tabs"><span class="active-tab"><strong class="mw-selflink selflink">Profile</strong></span><span class="inactive-tab"><a href="/wiki/Riddle_Rosehearts/Gallery" title="Riddle Rosehearts/Gallery">Gallery</a></span><span class="inactive-tab"><a href="/wiki/Riddle_Rosehearts/Cards" title="Riddle Rosehearts/Cards">Cards</a></span><span class="inactive-tab"><a href="/wiki/Riddle_Rosehearts/Relationships" title="Riddle Rosehearts/Relationships">Relationships</a></span><span class="inactive-tab"><a href="/wiki/Riddle_Rosehearts/Voice_Lines" title="Riddle Rosehearts/Voice Lines">Voice Lines</a></span><span class="inactive-tab"><a href="/wiki/Riddle_Rosehearts/Vignettes" title="Riddle Rosehearts/Vignettes">Vignettes</a></span><span class="inactive-tab"><a href="/wiki/Riddle_Rosehearts/Chats" title="Riddle Rosehearts/Chats">Chats</a></span></div></div>
-<p>
-</p><aside role="region" class="portable-infobox pi-background pi-border-color pi-theme-twst pi-theme-Heartslabyul pi-layout-default"><h2 class="pi-item pi-header pi-secondary-font pi-item-spacing pi-secondary-background" data-item-name="dorm"><span typeof="mw:File"><a href="https://static.wikia.nocookie.net/twisted-wonderland/images/7/73/Heartslabyul.png/revision/latest?cb=20190711002343" class="mw-file-description image" style="display: inline-block; position: relative; vertical-align: bottom; overflow: hidden;"><img src="https://static.wikia.nocookie.net/twisted-wonderland/images/7/73/Heartslabyul.png/revision/latest/scale-to-width-down/80?cb=20190711002343" decoding="async" loading="lazy" width="80" height="80" class="mw-file-element" data-image-name="Heartslabyul.png" data-image-key="Heartslabyul.png" data-relevant="1" style="transform: scale(1); transition: transform 0.3s ease-in-out;"><div style="position: absolute; bottom: 0px; right: 0px; width: 100%; height: 100%;"><div class="gallery-icon-container view-image"><div class="icon-container view-image" aria-label="view image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em"><defs><path id="IconImagesSmall__a" d="M11 15h-.586L3 7.586V7h8v8zm-8 0v-4.586L7.586 15H3zm9-10a1 1 0 011 1v10a1 1 0 01-1 1H2a1 1 0 01-1-1V6a1 1 0 011-1h10zm4-4a1 1 0 011 1v10a1 1 0 11-2 0V3H6a1 1 0 110-2h10z"></path></defs><use xlink:href="#IconImagesSmall__a" fill-rule="evenodd"></use></svg></div></div></div></a></span><br>[ HEARTSLABYUL DORM ]</h2>
-
-<h2 class="pi-item pi-item-spacing pi-title pi-secondary-background" data-source="name">Riddle Rosehearts</h2>
-
-<figure class="pi-item pi-image" data-source="image">
-	<a href="https://static.wikia.nocookie.net/twisted-wonderland/images/a/a5/Heartslabyul_chara_riddle_detail_A.png/revision/latest?cb=20190902021047" class="image image-thumbnail" title="Heartslabyul chara riddle detail A" style="display: inline-block; position: relative; vertical-align: bottom; overflow: hidden;">
-		<img src="https://static.wikia.nocookie.net/twisted-wonderland/images/a/a5/Heartslabyul_chara_riddle_detail_A.png/revision/latest/scale-to-width-down/268?cb=20190902021047" srcset="https://static.wikia.nocookie.net/twisted-wonderland/images/a/a5/Heartslabyul_chara_riddle_detail_A.png/revision/latest/scale-to-width-down/268?cb=20190902021047 1x, https://static.wikia.nocookie.net/twisted-wonderland/images/a/a5/Heartslabyul_chara_riddle_detail_A.png/revision/latest/scale-to-width-down/536?cb=20190902021047 2x" class="pi-image-thumbnail" data-relevant="1" alt="Heartslabyul chara riddle detail A" width="270" height="346" data-image-key="Heartslabyul_chara_riddle_detail_A.png" data-image-name="Heartslabyul chara riddle detail A.png" style="transform: scale(1); transition: transform 0.3s ease-in-out;">
-		
-	<div style="position: absolute; bottom: 0px; right: 0px; width: 100%; height: 100%;"><div class="gallery-icon-container view-image"><div class="icon-container view-image" aria-label="view image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em"><defs><path id="IconImagesSmall__a" d="M11 15h-.586L3 7.586V7h8v8zm-8 0v-4.586L7.586 15H3zm9-10a1 1 0 011 1v10a1 1 0 01-1 1H2a1 1 0 01-1-1V6a1 1 0 011-1h10zm4-4a1 1 0 011 1v10a1 1 0 11-2 0V3H6a1 1 0 110-2h10z"></path></defs><use xlink:href="#IconImagesSmall__a" fill-rule="evenodd"></use></svg></div></div></div></a>
-	
-</figure>
-
-	<section class="pi-item pi-panel pi-border-color wds-tabber">
-		
-		
-			<div class="wds-tabs__wrapper"><div class="wds-tabs__arrow-left"><svg class="wds-icon wds-icon-tiny">
-<use href="#wds-icons-menu-control-tiny"></use>
-</svg></div>
-				<ul class="wds-tabs">
-					
-						<li class="wds-tabs__tab wds-is-current">
-							<div class="wds-tabs__tab-label">
-								Bio
-							</div>
-						</li>
-					
-						<li class="wds-tabs__tab">
-							<div class="wds-tabs__tab-label">
-								School
-							</div>
-						</li>
-					
-						<li class="wds-tabs__tab">
-							<div class="wds-tabs__tab-label">
-								Preferences
-							</div>
-						</li>
-					
-				</ul>
-			<div class="wds-tabs__arrow-right"><svg class="wds-icon wds-icon-tiny">
-<use href="#wds-icons-menu-control-tiny"></use>
-</svg></div></div>
-		
-		
-			<div class="wds-tab__content wds-is-current">
-				
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="japanese">
-	
-		<h3 class="pi-data-label pi-secondary-font">Japanese</h3>
-	
-	<div class="pi-data-value pi-font"><span><span lang="ja">リドル・ローズハート</span></span><br><small>Ridoru Rōzuhāto</small></div>
-</div>
-
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="birthday">
-	
-		<h3 class="pi-data-label pi-secondary-font">Birthday</h3>
-	
-	<div class="pi-data-value pi-font">August 24&nbsp;(Virgo)</div>
-</div>
-
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="age">
-	
-		<h3 class="pi-data-label pi-secondary-font">Age</h3>
-	
-	<div class="pi-data-value pi-font">17</div>
-</div>
-
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="height">
-	
-		<h3 class="pi-data-label pi-secondary-font">Height</h3>
-	
-	<div class="pi-data-value pi-font">160 cm</div>
-</div>
-
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="hand">
-	
-		<h3 class="pi-data-label pi-secondary-font">Dominant Hand</h3>
-	
-	<div class="pi-data-value pi-font">Right</div>
-</div>
-
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="homeland">
-	
-		<h3 class="pi-data-label pi-secondary-font">Homeland</h3>
-	
-	<div class="pi-data-value pi-font">Queendom of Roses</div>
-</div>
-
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="family">
-	
-		<h3 class="pi-data-label pi-secondary-font">Family</h3>
-	
-	<div class="pi-data-value pi-font"><ul><li>Unnamed Mother and Father</li></ul></div>
-</div>
-
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="voice">
-	
-		<h3 class="pi-data-label pi-secondary-font">Voiced by</h3>
-	
-	<div class="pi-data-value pi-font"><a href="https://en.wikipedia.org/wiki/Natsuki_Hanae" class="extiw" title="wikipedia:Natsuki Hanae">Natsuki Hanae</a><br>Miyuki Sato (child)</div>
-</div>
-
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="othername">
-	
-		<h3 class="pi-data-label pi-secondary-font">Other Name(s)</h3>
-	
-	<div class="pi-data-value pi-font">        				<div class="mw-collapsible mw-collapsed mw-made-collapsible" data-expandtext="+" data-collapsetext="-"><button type="button" class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" aria-expanded="false" tabindex="0"><span class="mw-collapsible-text">+</span></button><div class="mw-collapsible-content" style="display: none;">        					<ul>								<li>Red Young Master, Little Red-Headed Boy<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">[</span>1<span class="cite-bracket">]</span></a></sup> (Leona)</li>								<li>Goldfishie (Floyd)</li>								<li>Roi des Roses (Rook)</li>								<li>Mr. Impossible-to-Please, Taskmaster Riddle, Instructor Riddle, Mr. Zero EQ, Tiny Titan (Idia)</li>								<li>Teapot Tyrant (Ace, Grim)</li>								<li>Ragin’ Riddle (Grim)</li>								<li>Mr. Goody Two Shoes<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">[</span>2<span class="cite-bracket">]</span></a></sup>, Tiny Little Red-Headed Tyrant<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">[</span>3<span class="cite-bracket">]</span></a></sup> (Ace)</li>								<li>Rose-Red Tyrant<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">[</span>4<span class="cite-bracket">]</span></a></sup></li>								<li>Red-Headed Kid<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">[</span>5<span class="cite-bracket">]</span></a></sup>(Yuken)</li>																															</ul>						</div></div></div>
-</div>
-
-			</div>
-		
-			<div class="wds-tab__content">
-				
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="grade">
-	
-		<h3 class="pi-data-label pi-secondary-font">Grade</h3>
-	
-	<div class="pi-data-value pi-font">Sophomore</div>
-</div>
-
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="class">
-	
-		<h3 class="pi-data-label pi-secondary-font">Class</h3>
-	
-	<div class="pi-data-value pi-font">Class E (No. 26)</div>
-</div>
-
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="club">
-	
-		<h3 class="pi-data-label pi-secondary-font">Club</h3>
-	
-	<div class="pi-data-value pi-font">Equestrian Club</div>
-</div>
-
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="best_subject">
-	
-		<h3 class="pi-data-label pi-secondary-font">Best Subject</h3>
-	
-	<div class="pi-data-value pi-font">Practical Magic</div>
-</div>
-
-			</div>
-		
-			<div class="wds-tab__content">
-				
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="hobbies">
-	
-		<h3 class="pi-data-label pi-secondary-font">Hobbies</h3>
-	
-	<div class="pi-data-value pi-font">Hedgehog tending</div>
-</div>
-
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="pet_peeves">
-	
-		<h3 class="pi-data-label pi-secondary-font">Pet Peeves</h3>
-	
-	<div class="pi-data-value pi-font">Rulebreaking</div>
-</div>
-
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="favorite_food">
-	
-		<h3 class="pi-data-label pi-secondary-font">Favorite Food</h3>
-	
-	<div class="pi-data-value pi-font">Strawberry tarts</div>
-</div>
-
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="least_favorite_food">
-	
-		<h3 class="pi-data-label pi-secondary-font">Least Favorite Food</h3>
-	
-	<div class="pi-data-value pi-font">Junk food</div>
-</div>
-
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="talent">
-	
-		<h3 class="pi-data-label pi-secondary-font">Talent</h3>
-	
-	<div class="pi-data-value pi-font">Fast at crossword puzzles</div>
-</div>
-
-			</div>
-		
-	</section>
-
-
-
-</aside>
-
-<p></p>
-<blockquote><p>Housewarden of Heartslabyul. A serious-minded student who firmly upholds the rules written by the Queen of Hearts. While a top student, he is easily angered and just as strict with others as he is with himself.
-</p><div class="source"><i>In-game Album</i>
-<i></i></div></blockquote>
-<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" aria-label="show"><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading"><svg class="wds-icon wds-icon-tiny">
-<use href="#wds-icons-bullet-list-tiny"></use>
-</svg>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox" aria-label="show"></label></span></div>
-<ul>
-<li class="toclevel-1 tocsection-1"><a href="#Appearance"><span class="tocnumber">1</span> <span class="toctext">Appearance</span></a>
-<ul>
-<li class="toclevel-2 tocsection-2"><a href="#Dorm_Uniform"><span class="tocnumber">1.1</span> <span class="toctext">Dorm Uniform</span></a></li>
-</ul>
-</li>
-<li class="toclevel-1 tocsection-3"><a href="#Personality"><span class="tocnumber">2</span> <span class="toctext">Personality</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="#Background"><span class="tocnumber">3</span> <span class="toctext">Background</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="#Magical_Skills"><span class="tocnumber">4</span> <span class="toctext">Magical Skills</span></a>
-<ul>
-<li class="toclevel-2 tocsection-6"><a href="#Signature_Spell"><span class="tocnumber">4.1</span> <span class="toctext">Signature Spell</span></a></li>
-</ul>
-</li>
-<li class="toclevel-1 tocsection-7"><a href="#Trivia"><span class="tocnumber">5</span> <span class="toctext">Trivia</span></a></li>
-<li class="toclevel-1 tocsection-8"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-9"><a href="#Navigation"><span class="tocnumber">7</span> <span class="toctext">Navigation</span></a></li>
-</ul>
-</div>
-
-<h2><span class="mw-headline" id="Appearance">Appearance</span></h2>
-<p>Riddle is a young-looking, fair-skinned young man that is considerably shorter than a majority of his peers. His hair is a neutral red color, and is cut short in the back and a bit longer around his face. His bangs curve inward, and two prominent strands of hair on the top of his head fall forward and form a heart shape. His eyes are bluish-gray, and he is commonly seen with a stern look on his face.
-</p>
-<div class="incontent_leaderboard"><div id="incontent_leaderboard_1"></div></div><h3><span class="mw-headline" id="Dorm_Uniform">Dorm Uniform</span></h3>
-<p>As the housewarden, Riddle’s dorm uniform differs greatly from the rest of the Heartslabyul students. The most distinguishing features are the small, golden crown on his head resembling the crown worn by the Queen of Hearts, and a long cape worn on his left shoulder. Riddle also wears red eyeshadow when in his dorm uniform.
-</p><p>He wears a long white coat dress with yellow buttons, yellow trim, and a red underlining with a card-suit pattern. The coat dress is folded in the front in a curtain-type manner, connecting to two red roses on both sides of the coat. The lapels of his coat are asymmetrically colored black and red, and the red cuffs on his sleeves are folded up to reveal long, black gloves. Seen under the coat is a white dress shirt with a frilled collar, and a red and black cross bow-tie around the neck. A gold, crown-shaped pin is placed where the bow-tie intersects. 
-</p><p>Underneath the lapel of the coat on his left side hangs two gold ornaments, and printed on his coat is the symbol of Heartslabyul. Over the coat and around his waist is a striped, yellow and black sash, tied on his right side under a white pin, with red ruffles and a gold “H” in the center.
-</p><p>His pants are white to match his coat, with a red and yellow stripe on the outer seams. Over the pants are black, over-the-knee boots, with a gold, heart-shaped design on the boot collars, modeled after the Queen of Hearts'<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span class="cite-bracket">[</span>6<span class="cite-bracket">]</span></a></sup>. The boots have gold soles with high-heels, and red heart designs over the toe cap and heel.
-</p><p>His signature cape is worn over his left shoulder, and reaches the floor in length. It is black on the outside with red underlining and a large, white collar near the neck. The cape is seemingly connected to a checkerboard-patterned sash with yellow trim that wraps over the lapel of his coat. Placed where the sash and cape connect is a white rose, halfway covered in red paint.
-</p>
-<h2><span class="mw-headline" id="Personality">Personality</span></h2>
-<p>Riddle has a strong commitment to maintaining order among his peers. He makes it his duty to uphold hundreds of strange rules created by the Queen of Hearts as per his dorm’s customs. He can be seen as strict and intimidating by his fellow dorm members due to his severe punishments towards those who break the Queen’s rules, no matter how insignificant they may seem. He considers any written rule, whether it be from the school, the teachers, or the Queen herself, to be of utmost importance, and believes that any disobedience will cause unneeded chaos. 
-</p><p>Riddle is very dedicated to his studies at Night Raven College, and seeks perfection in every aspect of his life. He can be a bit irritable at times, sometimes for unnecessary reasons, like when someone mentions his height. He has a tendency to lash out against those who disagree with his way of thinking, as he considers his values to be morally right no matter what.
-</p><p>While his strictness seems to come from a place of entitlement at first, it’s later revealed that Riddle feels like he must act this way out of obligation. Deep down, he wouldn’t mind breaking the rules now and again, but was taught the hard way as a child that rebelling against the status quo will only make things worse for himself and others.
-</p><p>After the events of <a href="/wiki/Book_1" title="Book 1">Book 1</a>, he learns to be a bit less strict with his fellow dorm members, as well as with himself. He seems to accept the fact that not everything has to be perfect, and works to find compromises with rule-breakers instead of immediately punishing them.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span class="cite-bracket">[</span>7<span class="cite-bracket">]</span></a></sup>
-</p>
-<div class="incontent_leaderboard"><div id="incontent_leaderboard_2"></div></div><h2><span class="mw-headline" id="Background">Background</span></h2>
-<p>Riddle was born and raised in the Queendom of Roses. His parents are magic doctors, but his mother seems to be more well-known. <sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span class="cite-bracket">[</span>8<span class="cite-bracket">]</span></a></sup> The whereabouts of his father is currently unknown. However, it's implied that his parents don’t get along.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span class="cite-bracket">[</span>9<span class="cite-bracket">]</span></a></sup>
-</p><p>Riddle's mother raised him and taught him from a very young age to be a powerful magic user. She controlled every aspect of Riddle's life; clothing, diet, who Riddle can be friends with, etc. She especially put emphasis on Riddle's studying schedule, reminding him multiple times that studies are the most important thing to do and that playing is a pointless activity. 
-</p><p>Because of this, Riddle spent most of his childhood alone and spent with studying. But one day, he saw Trey and Che'nya outside of his house, who asked Riddle what was he doing. Riddle told the boys that he's studying, as his mother told him. Trey and Che'nya invite Riddle to play together outside, with the hesitant Riddle initially refusing the offer, but after some convincing, he agrees to play with them. Riddle states that playing as a child with Trey and Che'nya together was a really fun experience, and so he would sneak out of his study time unbeknownst to his mother and play with Trey and Che'nya.
-</p><p>On another occasion, while Riddle was playing together with Trey and Che'nya, Riddle stated that he'd never eaten strawberry tarts before and didn't know the taste of them, as sweets were prohibited by his mother, much to the surprise of his friends. Trey and Che'nya wanted Riddle to try his first tart, and the two then brought Riddle to Trey's popular family-owned bakery, though Riddle was reluctant about it at first. At the bakery, Riddle tasted the Strawberry Tart, and loved it. He ate until he lost track of time, in which he was found by his angry and upset mother, and was dragged back home. 
-</p><p>Back in the house, Riddle's mother harshly scolded and reprimanded the distressed Riddle, who begged and cried to his mom to forgive him, but Riddle's mom didn't listen and thus made his studying time even more strict than it already is. In addition to the strictness of his schedule, both Trey and Che'nya were forbidden from ever interacting with Riddle and the two were to not step foot into Riddle's house. As time passed by, and Riddle spent his days doing nothing but studying and following his mother's orders, he adjusted to the harsh and strict life he has to live through. 
-</p><p>A year before the game takes place, Riddle was recruited to be a student in Night Raven College, and a week after he enrolled into the school, he became housewarden of Heartslabyul and has been fulfilling the role since then.
-</p>
-<h2><span class="mw-headline" id="Magical_Skills">Magical Skills</span></h2>
-<p>Having received intense training from a very early age, Riddle had developed to be an incredibly skilled magician for his age, even overpowering many of his upperclassmen. Out of the three main elements, Riddle seems particularly skilled with fire magic, and uses it frequently. 
-</p><p>Based off on Idia's status report when analysing him and the other former overblot victims, Riddle's style of attack is compared to that of a DPS Unit: he's a magician that excels with dealing high amounts of damage at rapid pace, but is also fragile and easily defeated.
-</p>
-<div class="incontent_leaderboard"><div id="incontent_leaderboard_3"></div></div><h3><span class="mw-headline" id="Signature_Spell">Signature Spell</span></h3>
-<blockquote><p>Are you ready for your sentence? The verdict comes afterwards. Any last words? Off With Your Head!</p><div class="source"><i>Riddle Rosehearts (Twisted-Wonderland Manga Episode of Heartslabyul: Volume 1)</i></div></blockquote>
-<p>Riddle's signature spell is called "Off with Your Head!" It causes a heart-shaped collar to lock around the target's neck, sealing away their magic until Riddle chooses to remove it.<sup id="cite_ref-1-9_10-0" class="reference"><a href="#cite_note-1-9-10"><span class="cite-bracket">[</span>10<span class="cite-bracket">]</span></a></sup> Although the spell is seemingly invincible, especially for inexperienced magicians, it can be countered by protective magic<sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span class="cite-bracket">[</span>11<span class="cite-bracket">]</span></a></sup>, or broken by a strong-enough target.
-</p>
-<h2><span class="mw-headline" id="Trivia">Trivia</span></h2>
-<ul><li>Riddle's first name may be an allusion to <i>Alice in Wonderland</i>'s protagonist, Alice Liddell, as "Liddell" and "Riddle" are phonetically similar in Japanese. His last name comes from "rose", a reference to the Queen of Hearts' favorite flowers, and "hearts", the card suit that the Queen represents.
-<ul><li>His first name may also be a general nod to some of <i>Alice in Wonderland</i>'s characters, who frequently speak in riddles.</li></ul></li>
-<li>Riddle became the housewarden of Heartslabyul only a week after he enrolled at Night Raven College, while he was still a freshman.<sup id="cite_ref-1-9_10-1" class="reference"><a href="#cite_note-1-9-10"><span class="cite-bracket">[</span>10<span class="cite-bracket">]</span></a></sup></li>
-<li>He enjoys solving crossword puzzles.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span class="cite-bracket">[</span>12<span class="cite-bracket">]</span></a></sup></li>
-<li>It seems that Riddle is very self-conscious about his height; he flares up immediately whenever anyone mentions his stature, or treats him differently because of it.
-<ul><li>He claims that his height isn't the problem, but rather those who judge others based on appearance.</li>
-<li>He once furiously states that men continue growing well into their 20s, and that he still has time left to get taller.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span class="cite-bracket">[</span>13<span class="cite-bracket">]</span></a></sup></li></ul></li>
-<li>His horse in the Equestrian Club is named Vorpal.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span class="cite-bracket">[</span>14<span class="cite-bracket">]</span></a></sup>
-<ul><li>This is most likely a reference to the vorpal sword, a weapon first mentioned in Lewis Carroll's short poem, "Jabberwocky." The sword later appears in Tim Burton's <i>Alice in Wonderland</i> (2010).</li></ul></li>
-<li>In a test, Riddle chooses to answer questions from the very beginning instead of going through them and doing the most convenient ones first.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15"><span class="cite-bracket">[</span>15<span class="cite-bracket">]</span></a></sup></li>
-<li>He prefers honey over sugar in his tea.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16"><span class="cite-bracket">[</span>16<span class="cite-bracket">]</span></a></sup></li>
-<li>Riddle irons his uniform shirt every morning.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17"><span class="cite-bracket">[</span>17<span class="cite-bracket">]</span></a></sup></li>
-<li>When Riddle first arrived at the college, he bought a slightly larger PE Uniform hoping he would grow taller. He still wears it despite not having grown.<sup id="cite_ref-18" class="reference"><a href="#cite_note-18"><span class="cite-bracket">[</span>18<span class="cite-bracket">]</span></a></sup></li>
-<li>He admires magical healers and almost considered entering the field before changing his mind to the field of law.<sup id="cite_ref-19" class="reference"><a href="#cite_note-19"><span class="cite-bracket">[</span>19<span class="cite-bracket">]</span></a></sup></li>
-<li>Riddle enjoys the aroma of a freshly baked cake and antiseptic solution, the former being his favorite of the two.<sup id="cite_ref-20" class="reference"><a href="#cite_note-20"><span class="cite-bracket">[</span>20<span class="cite-bracket">]</span></a></sup></li>
-<li>Since Riddle was often a student representative in the schools he attended since elementary, public speaking does not faze him.<sup id="cite_ref-21" class="reference"><a href="#cite_note-21"><span class="cite-bracket">[</span>21<span class="cite-bracket">]</span></a></sup></li>
-<li>It is implied that Riddle is two years younger than Trey, and that the events that occurred during <a href="/wiki/Book_1/Chapter_25" title="Book 1/Chapter 25">Book 1 Chapter 25</a> were shortly after his birthday and before Trey's.<sup id="cite_ref-22" class="reference"><a href="#cite_note-22"><span class="cite-bracket">[</span>22<span class="cite-bracket">]</span></a></sup></li>
-<li>In the first drafts Riddle’s personality was originally the opposite of what it finally became, At first he was a character who had been spoiled growing up, disliked studying, was selfish and always broke promises and rules but because of his strong magic, he could not be denied. In the end Yana was not satisfied with her own scenario and rewrote it resulting in the current Book 1 story. The development team was surprised to see the 180-degree difference between the setting we had already submitted and Riddle’s new personality, but the team accepting it and even said it was an improvement and the character became what he is today. The fact that he has styled his own uniform for a cuter look is a remnant of how he was in the realy stage of the project.<sup id="cite_ref-23" class="reference"><a href="#cite_note-23"><span class="cite-bracket">[</span>23<span class="cite-bracket">]</span></a></sup><div style="clear:both"></div></li></ul>
-<div class="incontent_leaderboard"><div id="incontent_leaderboard_4"></div></div><h2><span class="mw-headline" id="References">References</span></h2>
-<div class="columntemplate" style="-moz-column-count: 1; -webkit-column-count: 1; column-count: 1;"><div class="references-small" style="-moz-column-count: ; -webkit-column-count: ; column-count: ;font-size: smaller;"><div class="mw-references-wrap mw-references-columns"><ol class="references">
-<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text">Heartslabyul Manga Chapter 2 Page 66</span>
-</li>
-<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text">Heartslabyul Manga Chapter 6 Page 33</span>
-</li>
-<li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text">Heartslabyul Manga Chapter 13 Page 29</span>
-</li>
-<li id="cite_note-4"><span class="mw-cite-backlink"><a href="#cite_ref-4" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text"><a href="/wiki/Book_1" title="Book 1">Book 1</a> Title In-game</span>
-</li>
-<li id="cite_note-5"><span class="mw-cite-backlink"><a href="#cite_ref-5" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text">Heartslabyul Manga Chapter 3 Page 104</span>
-</li>
-<li id="cite_note-6"><span class="mw-cite-backlink"><a href="#cite_ref-6" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text"><a href="/wiki/Riddle_Rosehearts/Voice_Lines#Dorm_Uniform" title="Riddle Rosehearts/Voice Lines">Riddle Dorm Uniform Tap Home 3 Voice Line</a></span>
-</li>
-<li id="cite_note-7"><span class="mw-cite-backlink"><a href="#cite_ref-7" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text"><a href="/wiki/Book_1/Chapter_28" title="Book 1/Chapter 28">Book 1/Chapter 28</a></span>
-</li>
-<li id="cite_note-8"><span class="mw-cite-backlink"><a href="#cite_ref-8" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text"><a href="/wiki/Book_1/Chapter_19" title="Book 1/Chapter 19">Book 1/Chapter 19</a></span>
-</li>
-<li id="cite_note-9"><span class="mw-cite-backlink"><a href="#cite_ref-9" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text"><a href="/wiki/Riddle_Rosehearts/Voice_Lines#Suitor_Suit" title="Riddle Rosehearts/Voice Lines">Riddle Suitor Suit Home Transition 1 Voice Line</a></span>
-</li>
-<li id="cite_note-1-9-10"><span class="mw-cite-backlink">↑ <sup><a href="#cite_ref-1-9_10-0"><span class="cite-accessibility-label">Jump up to: </span>10.0</a></sup> <sup><a href="#cite_ref-1-9_10-1">10.1</a></sup></span> <span class="reference-text"><a href="/wiki/Book_1/Chapter_9" title="Book 1/Chapter 9">Book 1/Chapter 9</a></span>
-</li>
-<li id="cite_note-11"><span class="mw-cite-backlink"><a href="#cite_ref-11" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text"><a href="/wiki/Book_2/Chapter_25" title="Book 2/Chapter 25">Book 2/Chapter 25</a></span>
-</li>
-<li id="cite_note-12"><span class="mw-cite-backlink"><a href="#cite_ref-12" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text"><a href="/wiki/Riddle_Rosehearts/Cards/SSR_Birthday_Boy/Vignette" title="Riddle Rosehearts/Cards/SSR Birthday Boy/Vignette">Riddle Birthday Boy Vignette</a></span>
-</li>
-<li id="cite_note-13"><span class="mw-cite-backlink"><a href="#cite_ref-13" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text"><a href="/wiki/The_Phantom_Bride:_Love_at_First_Fright/Story/Chapter_17" title="The Phantom Bride: Love at First Fright/Story/Chapter 17">The Phantom Bride: Love at First Fright Story Chapter 17</a></span>
-</li>
-<li id="cite_note-14"><span class="mw-cite-backlink"><a href="#cite_ref-14" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text"><a href="/wiki/Riddle_Rosehearts/Cards/SR_Ceremonial_Robes/Vignette" title="Riddle Rosehearts/Cards/SR Ceremonial Robes/Vignette">Riddle Ceremonial Robes Vignette</a></span>
-</li>
-<li id="cite_note-15"><span class="mw-cite-backlink"><a href="#cite_ref-15" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text"><a href="/wiki/Book_6/Chapter_66-3-11/PTM-2565" title="Book 6/Chapter 66-3-11/PTM-2565">Book 6/Chapter 66-3-11/PTM-2565</a></span>
-</li>
-<li id="cite_note-16"><span class="mw-cite-backlink"><a href="#cite_ref-16" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text"><a href="/wiki/Book_1/Chapter_26" title="Book 1/Chapter 26">Book 1/Chapter 26</a></span>
-</li>
-<li id="cite_note-17"><span class="mw-cite-backlink"><a href="#cite_ref-17" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text"><a href="/wiki/Riddle_Rosehearts/Voice_Lines#School_Uniform" title="Riddle Rosehearts/Voice Lines">Riddle School Uniform Home Transition 1 Voice Line</a></span>
-</li>
-<li id="cite_note-18"><span class="mw-cite-backlink"><a href="#cite_ref-18" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text"><a href="/wiki/Riddle_Rosehearts/Voice_Lines#PE_Uniform" title="Riddle Rosehearts/Voice Lines">Riddle PE Uniform Home Transition 3 Voice Line</a></span>
-</li>
-<li id="cite_note-19"><span class="mw-cite-backlink"><a href="#cite_ref-19" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text"><a href="/wiki/Riddle_Rosehearts/Voice_Lines#Labwear" title="Riddle Rosehearts/Voice Lines">Riddle Labwear Tap Home 1 Voice Line</a></span>
-</li>
-<li id="cite_note-20"><span class="mw-cite-backlink"><a href="#cite_ref-20" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text"><a href="/wiki/Riddle_Rosehearts/Voice_Lines#Labwear" title="Riddle Rosehearts/Voice Lines">Riddle Labwear Tap Home 2 Voice Line</a></span>
-</li>
-<li id="cite_note-21"><span class="mw-cite-backlink"><a href="#cite_ref-21" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text"><a href="/wiki/Riddle_Rosehearts/Voice_Lines#Ceremonial_Robes" title="Riddle Rosehearts/Voice Lines">Riddle Ceremonial Robes Home Transition 1 Voice Line</a></span>
-</li>
-<li id="cite_note-22"><span class="mw-cite-backlink"><a href="#cite_ref-22" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text"><a href="https://static.wikia.nocookie.net/twisted-wonderland/images/0/06/The_Manga_%28Book_of_Heartslabyul%29_Riddle_Model_Sheet_%28Child%29.png/revision/latest?cb=20240716133735" class="internal" title="The Manga (Book of Heartslabyul) Riddle Model Sheet (Child).png">Riddle Model Sheet</a> &amp; <a href="https://static.wikia.nocookie.net/twisted-wonderland/images/e/e1/The_Manga_%28Book_of_Heartslabyul%29_Trey_Model_Sheet_%28Child%29.png/revision/latest?cb=20240716134001" class="internal" title="The Manga (Book of Heartslabyul) Trey Model Sheet (Child).png">Trey Model Sheet</a></span>
-</li>
-<li id="cite_note-23"><span class="mw-cite-backlink"><a href="#cite_ref-23" aria-label="Jump up" title="Jump up">↑</a></span> <span class="reference-text">Twisted Wonderland Magical Archives</span>
-</li>
-</ol></div></div></div>
-<h2><span class="mw-headline" id="Navigation">Navigation</span></h2>
-<table cellspacing="0" class="Mainpage-border navbox" style="border-spacing:0;;"><tbody><tr><td style="padding:2px;"><table cellspacing="0" class="nowraplinks mw-collapsible navbox-inner mw-made-collapsible" style="border-spacing:0;background:transparent;color:inherit;;"><tbody><tr valign="middle"><th style=";" colspan="2" class="navbox-title"><button type="button" class="mw-collapsible-toggle mw-collapsible-toggle-default" aria-expanded="true" tabindex="0"><span class="mw-collapsible-text">Collapse</span></button><div style="float:left;width:6em;text-align:left">&nbsp;</div><span class="" style="font-size:110%;">Characters</span></th></tr><tr style="height:2px;"><td></td></tr><tr><td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd"><div style="padding:0em 0.25em">
-<p><span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Riddle" title="Riddle"><img alt="Riddle" src="https://static.wikia.nocookie.net/twisted-wonderland/images/7/7d/Character_Riddle_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220231412" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element" data-image-name="Character Riddle SD Head.png" data-image-key="Character_Riddle_SD_Head.png" data-relevant="1"></a></span></span><small><a href="/wiki/Riddle" class="mw-redirect" title="Riddle">Riddle</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Ace" title="Ace"><img alt="Ace" src="https://static.wikia.nocookie.net/twisted-wonderland/images/f/f2/Character_Ace_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234419" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element" data-image-name="Character Ace SD Head.png" data-image-key="Character_Ace_SD_Head.png" data-relevant="1"></a></span></span><small><a href="/wiki/Ace" class="mw-redirect" title="Ace">Ace</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Deuce" title="Deuce"><img alt="Deuce" src="https://static.wikia.nocookie.net/twisted-wonderland/images/e/e0/Character_Deuce_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234425" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element lazyloaded" data-image-name="Character Deuce SD Head.png" data-image-key="Character_Deuce_SD_Head.png" data-relevant="1" data-src="https://static.wikia.nocookie.net/twisted-wonderland/images/e/e0/Character_Deuce_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234425"></a></span></span><small><a href="/wiki/Deuce" class="mw-redirect" title="Deuce">Deuce</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Cater" title="Cater"><img alt="Cater" src="https://static.wikia.nocookie.net/twisted-wonderland/images/7/74/Character_Cater_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234602" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element lazyloaded" data-image-name="Character Cater SD Head.png" data-image-key="Character_Cater_SD_Head.png" data-relevant="1" data-src="https://static.wikia.nocookie.net/twisted-wonderland/images/7/74/Character_Cater_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234602"></a></span></span><small><a href="/wiki/Cater" class="mw-redirect" title="Cater">Cater</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Trey" title="Trey"><img alt="Trey" src="https://static.wikia.nocookie.net/twisted-wonderland/images/c/c2/Character_Trey_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234218" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element lazyloaded" data-image-name="Character Trey SD Head.png" data-image-key="Character_Trey_SD_Head.png" data-relevant="1" data-src="https://static.wikia.nocookie.net/twisted-wonderland/images/c/c2/Character_Trey_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234218"></a></span></span><small><a href="/wiki/Trey" class="mw-redirect" title="Trey">Trey</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Leona" title="Leona"><img alt="Leona" src="https://static.wikia.nocookie.net/twisted-wonderland/images/4/41/Character_Leona_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234547" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element lazyloaded" data-image-name="Character Leona SD Head.png" data-image-key="Character_Leona_SD_Head.png" data-relevant="1" data-src="https://static.wikia.nocookie.net/twisted-wonderland/images/4/41/Character_Leona_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234547"></a></span></span><small><a href="/wiki/Leona" class="mw-redirect" title="Leona">Leona</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Jack" title="Jack"><img alt="Jack" src="https://static.wikia.nocookie.net/twisted-wonderland/images/a/a9/Character_Jack_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220327175919" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element lazyloaded" data-image-name="Character Jack SD Head.png" data-image-key="Character_Jack_SD_Head.png" data-relevant="1" data-src="https://static.wikia.nocookie.net/twisted-wonderland/images/a/a9/Character_Jack_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220327175919"></a></span></span><small><a href="/wiki/Jack" class="mw-redirect" title="Jack">Jack</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Ruggie" title="Ruggie"><img alt="Ruggie" src="https://static.wikia.nocookie.net/twisted-wonderland/images/a/a6/Character_Ruggie_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234501" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element lazyloaded" data-image-name="Character Ruggie SD Head.png" data-image-key="Character_Ruggie_SD_Head.png" data-relevant="1" data-src="https://static.wikia.nocookie.net/twisted-wonderland/images/a/a6/Character_Ruggie_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234501"></a></span></span><small><a href="/wiki/Ruggie" class="mw-redirect" title="Ruggie">Ruggie</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Azul" title="Azul"><img alt="Azul" src="https://static.wikia.nocookie.net/twisted-wonderland/images/4/4b/Character_Azul_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234432" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element lazyloaded" data-image-name="Character Azul SD Head.png" data-image-key="Character_Azul_SD_Head.png" data-relevant="1" data-src="https://static.wikia.nocookie.net/twisted-wonderland/images/4/4b/Character_Azul_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234432"></a></span></span><small><a href="/wiki/Azul" class="mw-redirect" title="Azul">Azul</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Jade" title="Jade"><img alt="Jade" src="https://static.wikia.nocookie.net/twisted-wonderland/images/4/48/Character_Jade_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234448" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element lazyloaded" data-image-name="Character Jade SD Head.png" data-image-key="Character_Jade_SD_Head.png" data-relevant="1" data-src="https://static.wikia.nocookie.net/twisted-wonderland/images/4/48/Character_Jade_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234448"></a></span></span><small><a href="/wiki/Jade" class="mw-redirect" title="Jade">Jade</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Floyd" title="Floyd"><img alt="Floyd" src="https://static.wikia.nocookie.net/twisted-wonderland/images/7/71/Character_Floyd_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234438" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element lazyloaded" data-image-name="Character Floyd SD Head.png" data-image-key="Character_Floyd_SD_Head.png" data-relevant="1" data-src="https://static.wikia.nocookie.net/twisted-wonderland/images/7/71/Character_Floyd_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234438"></a></span></span><small><a href="/wiki/Floyd" class="mw-redirect" title="Floyd">Floyd</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Kalim" title="Kalim"><img alt="Kalim" src="https://static.wikia.nocookie.net/twisted-wonderland/images/f/fd/Character_Kalim_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234543" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element lazyloaded" data-image-name="Character Kalim SD Head.png" data-image-key="Character_Kalim_SD_Head.png" data-relevant="1" data-src="https://static.wikia.nocookie.net/twisted-wonderland/images/f/fd/Character_Kalim_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234543"></a></span></span><small><a href="/wiki/Kalim" class="mw-redirect" title="Kalim">Kalim</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Jamil" title="Jamil"><img alt="Jamil" src="https://static.wikia.nocookie.net/twisted-wonderland/images/f/f0/Character_Jamil_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234537" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element lazyloaded" data-image-name="Character Jamil SD Head.png" data-image-key="Character_Jamil_SD_Head.png" data-relevant="1" data-src="https://static.wikia.nocookie.net/twisted-wonderland/images/f/f0/Character_Jamil_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234537"></a></span></span><small><a href="/wiki/Jamil" class="mw-redirect" title="Jamil">Jamil</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Vil" title="Vil"><img alt="Vil" src="https://static.wikia.nocookie.net/twisted-wonderland/images/d/d5/Character_Vil_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234204" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element lazyloaded" data-image-name="Character Vil SD Head.png" data-image-key="Character_Vil_SD_Head.png" data-relevant="1" data-src="https://static.wikia.nocookie.net/twisted-wonderland/images/d/d5/Character_Vil_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234204"></a></span></span><small><a href="/wiki/Vil" class="mw-redirect" title="Vil">Vil</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Epel" title="Epel"><img alt="Epel" src="https://static.wikia.nocookie.net/twisted-wonderland/images/e/e2/Character_Epel_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234557" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element lazyloaded" data-image-name="Character Epel SD Head.png" data-image-key="Character_Epel_SD_Head.png" data-relevant="1" data-src="https://static.wikia.nocookie.net/twisted-wonderland/images/e/e2/Character_Epel_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234557"></a></span></span><small><a href="/wiki/Epel" class="mw-redirect" title="Epel">Epel</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Rook" title="Rook"><img alt="Rook" src="https://static.wikia.nocookie.net/twisted-wonderland/images/0/04/Character_Rook_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234521" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element lazyloaded" data-image-name="Character Rook SD Head.png" data-image-key="Character_Rook_SD_Head.png" data-relevant="1" data-src="https://static.wikia.nocookie.net/twisted-wonderland/images/0/04/Character_Rook_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234521"></a></span></span><small><a href="/wiki/Rook" class="mw-redirect" title="Rook">Rook</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Idia" title="Idia"><img alt="Idia" src="https://static.wikia.nocookie.net/twisted-wonderland/images/9/9f/Character_Idia_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234353" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element lazyloaded" data-image-name="Character Idia SD Head.png" data-image-key="Character_Idia_SD_Head.png" data-relevant="1" data-src="https://static.wikia.nocookie.net/twisted-wonderland/images/9/9f/Character_Idia_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234353"></a></span></span><small><a href="/wiki/Idia" class="mw-redirect" title="Idia">Idia</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Ortho" title="Ortho"><img alt="Ortho" src="https://static.wikia.nocookie.net/twisted-wonderland/images/d/d0/Character_Ortho_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234508" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element lazyloaded" data-image-name="Character Ortho SD Head.png" data-image-key="Character_Ortho_SD_Head.png" data-relevant="1" data-src="https://static.wikia.nocookie.net/twisted-wonderland/images/d/d0/Character_Ortho_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234508"></a></span></span><small><a href="/wiki/Ortho" class="mw-redirect" title="Ortho">Ortho</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Malleus" title="Malleus"><img alt="Malleus" src="https://static.wikia.nocookie.net/twisted-wonderland/images/1/10/Character_Malleus_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234228" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element lazyloaded" data-image-name="Character Malleus SD Head.png" data-image-key="Character_Malleus_SD_Head.png" data-relevant="1" data-src="https://static.wikia.nocookie.net/twisted-wonderland/images/1/10/Character_Malleus_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234228"></a></span></span><small><a href="/wiki/Malleus" class="mw-redirect" title="Malleus">Malleus</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Silver" title="Silver"><img alt="Silver" src="https://static.wikia.nocookie.net/twisted-wonderland/images/9/97/Character_Silver_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234329" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element lazyloaded" data-image-name="Character Silver SD Head.png" data-image-key="Character_Silver_SD_Head.png" data-relevant="1" data-src="https://static.wikia.nocookie.net/twisted-wonderland/images/9/97/Character_Silver_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234329"></a></span></span><small><a href="/wiki/Silver" title="Silver">Silver</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Sebek" title="Sebek"><img alt="Sebek" src="https://static.wikia.nocookie.net/twisted-wonderland/images/a/ae/Character_Sebek_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234235" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element lazyloaded" data-image-name="Character Sebek SD Head.png" data-image-key="Character_Sebek_SD_Head.png" data-relevant="1" data-src="https://static.wikia.nocookie.net/twisted-wonderland/images/a/ae/Character_Sebek_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234235"></a></span></span><small><a href="/wiki/Sebek" class="mw-redirect" title="Sebek">Sebek</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Lilia" title="Lilia"><img alt="Lilia" src="https://static.wikia.nocookie.net/twisted-wonderland/images/4/40/Character_Lilia_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234513" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element lazyloaded" data-image-name="Character Lilia SD Head.png" data-image-key="Character_Lilia_SD_Head.png" data-relevant="1" data-src="https://static.wikia.nocookie.net/twisted-wonderland/images/4/40/Character_Lilia_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220220234513"></a></span></span><small><a href="/wiki/Lilia" class="mw-redirect" title="Lilia">Lilia</a></small></span>
-<span style="width: 60px; display: inline-block; margin:3px; line-height: 1em; text-align:center;"><span style="display: inline-block; width: 60px; height: 60px; margin-bottom: 5px;"><span typeof="mw:File"><a href="/wiki/Grim" title="Grim"><img alt="Grim" src="https://static.wikia.nocookie.net/twisted-wonderland/images/0/0f/Character_Grim_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220327193209" decoding="async" loading="lazy" width="60" height="60" class="mw-file-element lazyloaded" data-image-name="Character Grim SD Head.png" data-image-key="Character_Grim_SD_Head.png" data-relevant="1" data-src="https://static.wikia.nocookie.net/twisted-wonderland/images/0/0f/Character_Grim_SD_Head.png/revision/latest/scale-to-width-down/60?cb=20220327193209"></a></span></span><small><a href="/wiki/Grim" title="Grim">Grim</a></small></span>
-</p>
-</div></td></tr></tbody></table></td></tr></tbody></table>
-<!-- 
-NewPP limit report
-Cached time: 20250613194341
-Cache expiry: 1209600
-Reduced expiry: false
-Complications: [show‐toc]
-CPU time usage: 0.133 seconds
-Real time usage: 0.177 seconds
-Preprocessor visited node count: 2930/1000000
-Post‐expand include size: 52718/2097152 bytes
-Template argument size: 15867/2097152 bytes
-Highest expansion depth: 12/100
-Expensive parser function count: 1/100
-Unstrip recursion depth: 0/20
-Unstrip post‐expand size: 8169/5000000 bytes
-Lua time usage: 0.030/7.000 seconds
-Lua memory usage: 1066169/104857600 bytes
--->
-<!--
-Transclusion expansion time report (%,ms,calls,template)
-100.00%  125.540      1 -total
- 49.32%   61.915      1 Template:Infobox_character
- 21.62%   27.145      1 Template:Navbox_Characters_Main
- 20.57%   25.826      1 Template:Navbox
- 19.91%   24.999      1 Template:Lang
- 16.13%   20.248      1 Template:Array
- 14.38%   18.048      1 Template:Column
- 13.04%   16.376      1 Template:Reflist
- 10.90%   13.689     23 Template:Character
-  8.01%   10.061      1 Template:Namespace
--->
-
-<!-- Saved in parser cache with key 1.43.1_prod_twistedwonderland:pcache:idhash:90-0!sseVary=RegularPage!FandomDesktop!LegacyGalleries and timestamp 20250613194341 and revision id 92994. Rendering was triggered because: page-view
- -->
-</div><div id="tooltip-storage" class="WikiaArticle" style="height: 0px; min-height: 0px; visibility: hidden; overflow: hidden; position: static; font-size: 14px;"><div class="main-tooltip tt-basic-tooltip" id="tooltip-basic-tooltip">Lorem ipsum dolor sit amet</div></div></div>					</div>
-					<div class="page-footer">
-						
-	<div class="wds-collapsible-panel wds-is-collapsed page-footer__categories">
-		<header class="wds-collapsible-panel__header" aria-controls="collapsible-content-categories" aria-expanded="false">
-			Categories			<svg class="wds-icon wds-icon-small"><use xlink:href="#wds-icons-menu-control-small"></use></svg>		</header>
-		<div class="wds-collapsible-panel__content" id="collapsible-content-categories">
-							
-<nav class="article-categories CategorySelect articlePage" id="articleCategories">
-	<div class="container">
-		<ul class="categories">
-			<li class="special-categories-label"><a href="/wiki/Special:Categories" class="categoriesLink" title="Special:Categories">Categories</a><span>: </span></li>
-						<li class="category normal" data-name="Characters" data-namespace="" data-outertag="" data-sortkey="" data-type="normal">
-	<span class="name"><a href="/wiki/Category:Characters" title="Category:Characters">Characters</a></span>
-	<span class="tool removeCategory"></span>
-</li>
-			<li class="category normal" data-name="Heartslabyul members" data-namespace="" data-outertag="" data-sortkey="" data-type="normal">
-	<span class="name"><a href="/wiki/Category:Heartslabyul_members" title="Category:Heartslabyul members">Heartslabyul members</a></span>
-	<span class="tool removeCategory"></span>
-</li>
-			<li class="category normal" data-name="Riddle Rosehearts" data-namespace="" data-outertag="" data-sortkey="" data-type="normal">
-	<span class="name"><a href="/wiki/Category:Riddle_Rosehearts" title="Category:Riddle Rosehearts">Riddle Rosehearts</a></span>
-	<span class="tool removeCategory"></span>
-</li>
-			<li class="category normal" data-name="Night Raven College Students" data-namespace="" data-outertag="" data-sortkey="" data-type="normal">
-	<span class="name"><a href="/wiki/Category:Night_Raven_College_Students" title="Category:Night Raven College Students">Night Raven College Students</a></span>
-	<span class="tool removeCategory"></span>
-</li>
-			<li class="category normal" data-name="Queendom of Roses Characters" data-namespace="" data-outertag="" data-sortkey="" data-type="normal">
-	<span class="name"><a href="/wiki/Category:Queendom_of_Roses_Characters" title="Category:Queendom of Roses Characters">Queendom of Roses Characters</a></span>
-	<span class="tool removeCategory"></span>
-</li>
-			<li class="category normal" data-name="Overblotted Victims" data-namespace="" data-outertag="" data-sortkey="" data-type="normal">
-	<span class="name"><a href="/wiki/Category:Overblotted_Victims" title="Category:Overblotted Victims">Overblotted Victims</a></span>
-	<span class="tool removeCategory"></span>
-</li>
-			<li class="category normal" data-name="Human" data-namespace="" data-outertag="" data-sortkey="" data-type="normal">
-	<span class="name"><a href="/wiki/Category:Human" title="Category:Human">Human</a></span>
-	<span class="tool removeCategory"></span>
-</li>
-	
-					</ul>
-			</div>
-	</nav><a href="#configure-refpopups" class="refpopups-configure-page">[Configure Reference Popups]</a>
-					</div>
-	</div>
-							<div class="wds-collapsible-panel wds-is-collapsed page-footer__languages">
-		<header class="wds-collapsible-panel__header" aria-controls="collapsible-content-languages" aria-expanded="false">
-			Languages			<svg class="wds-icon wds-icon-small"><use xlink:href="#wds-icons-menu-control-small"></use></svg>		</header>
-		<div class="wds-collapsible-panel__content" id="collapsible-content-languages">
-							<a href="https://twisted-wonderland.fandom.com/ru/wiki/%D0%A0%D0%B8%D0%B4%D0%B4%D0%BB_%D0%A0%D0%BE%D1%83%D0%B7%D1%85%D0%B0%D1%80%D1%82%D1%81" data-tracking-label="lang-ru">Русский</a>
-					</div>
-	</div>
-
-														<div class="license-description">
-		Community content is available under <a href="https://www.fandom.com/licensing">CC-BY-SA</a> unless otherwise noted.	</div>
-						
-						<div id="mw-data-after-content">
-	<div class="page-footer__trfc-147 trfc-147">
-	<header class="trfc-147__header">
-		More Fandoms
-	</header>
-	<div class="trfc-147__content">
-		<ul class="trfc-147__list">
-			<li class="trfc-147__item"><a class="trfc-147__link" href="https://www.fandom.com/fancentral/fantasy">Fantasy</a></li>
-		</ul>
-	</div>
-</div>
-<div id="articleComments"><div class="article-comments-app"><div class="CommentList_comment-list__SA8FA"><div class="CommentList_comment-list-header__0D9Gj CommentList_comment-list-header-multi__d9AC2"><div class="CommentCounter_comment-counter__Kr4tO"><p>41 comments</p></div></div><div class="Comment_wrapper__VysRy" data-testid="article-comments__comment" data-thread-id="4400000000000052665"><div class="Comment_comment__50MD-"><div class="Comment_body__Dw-zH"><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:DallysUnloadedGun"><img src="https://static.wikia.nocookie.net/201f4e9f-bc76-4541-8522-cded370ca8db" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:DallysUnloadedGun">DallysUnloadedGun</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="5/19/2025, 5:58:14 PM" title="5/19/2025, 5:58:14 PM">5/19/2025</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div><div class=""><div class="entity-content"><p>Cutie patootie</p></div></div></div></div><div class="ReplyList_container__bj-35"></div></div><div class="LockOldComments-above" style="padding: 12px; text-align: center; color: var(--theme-alert-color);"><strong>🔒 The comments below are more than 100 days old, and are locked for new replies.</strong></div><div class="Comment_wrapper__VysRy LockOldComments-locked" data-testid="article-comments__comment" data-thread-id="4400000000000051031"><div class="Comment_comment__50MD-"><div class="Comment_body__Dw-zH"><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:RinRinRem"><img src="https://static.wikia.nocookie.net/47aae867-6b2a-41b6-9890-4bbe37171b3d" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:RinRinRem">RinRinRem</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="10/27/2024, 10:02:02 AM" title="10/27/2024, 10:02:02 AM">10/27/2024</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div><div class=""><div class="entity-content"><p>Would</p></div></div></div></div><div class="ReplyList_container__bj-35"><span class="ReplyList_top-border__fIxR2"></span><div class="ReplyList_list-wrapper__cuHYs"><div class="Reply_reply__HFNXA" data-testid="article-comments__reply" data-reply-id="4400000000000184351"><div class="Reply_body__PM9kM"><span><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:TheStooplyDog"><img src="https://static.wikia.nocookie.net/810b0c9d-f9ab-4981-9944-1345574e706c" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:TheStooplyDog">TheStooplyDog</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="11/15/2024, 12:18:40 PM" title="11/15/2024, 12:18:40 PM">11/15/2024</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div></span><div class=""><div class="entity-content"><p>Would what?</p></div></div></div></div><div class="Reply_reply__HFNXA" data-testid="article-comments__reply" data-reply-id="4400000000000184357"><div class="Reply_body__PM9kM"><span><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:RinRinRem"><img src="https://static.wikia.nocookie.net/47aae867-6b2a-41b6-9890-4bbe37171b3d" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:RinRinRem">RinRinRem</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="11/15/2024, 6:29:48 PM" title="11/15/2024, 6:29:48 PM">11/15/2024</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div></span><div class=""><div class="entity-content"><p>I would hug him. He looks adorable :3</p></div></div></div></div><div class="Reply_reply__HFNXA" data-testid="article-comments__reply" data-reply-id="4400000000000184358"><div class="Reply_body__PM9kM"><span><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:TheStooplyDog"><img src="https://static.wikia.nocookie.net/810b0c9d-f9ab-4981-9944-1345574e706c" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:TheStooplyDog">TheStooplyDog</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="11/15/2024, 6:31:07 PM" title="11/15/2024, 6:31:07 PM">11/15/2024</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div></span><div class=""><div class="entity-content"><p>Okay. I would too!</p></div></div></div></div></div></div></div><div class="Comment_wrapper__VysRy LockOldComments-locked" data-testid="article-comments__comment" data-thread-id="4400000000000050414"><div class="Comment_comment__50MD-"><div class="Comment_body__Dw-zH"><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:ShroudedSolitude"><img src="https://static.wikia.nocookie.net/20027df2-46ac-4864-8d42-380ff0a391e4" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:ShroudedSolitude">ShroudedSolitude</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="8/24/2024, 10:13:13 AM" title="8/24/2024, 10:13:13 AM">8/24/2024</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div><div class=""><div class="entity-content"><p>HAPPY BIRTHDAY RIDDLE!!</p></div></div></div></div><div class="ReplyList_container__bj-35"></div></div><div class="Comment_wrapper__VysRy LockOldComments-locked" data-testid="article-comments__comment" data-thread-id="4400000000000049181"><div class="Comment_comment__50MD-"><div class="Comment_body__Dw-zH"><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:LucaBalsaisHot"><img src="https://static.wikia.nocookie.net/84c3d295-0c5f-4355-9f1d-0a95ab9cbca7" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:LucaBalsaisHot">LucaBalsaisHot</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="5/8/2024, 6:56:28 AM" title="5/8/2024, 6:56:28 AM">5/8/2024</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div><div class=""><div class="entity-content"><p>I want this twink obliterated</p></div></div></div></div><div class="ReplyList_container__bj-35"><span class="ReplyList_top-border__fIxR2"></span><button class="ReplyList_view-all-replies__h75Z0">View more replies</button><div class="ReplyList_list-wrapper__cuHYs"><div class="Reply_reply__HFNXA" data-testid="article-comments__reply" data-reply-id="4400000000000177808"><div class="Reply_body__PM9kM"><span><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:Christiiz"><img src="https://static.wikia.nocookie.net/1480b758-7983-44ba-a0ef-6b3020db9d2a" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:Christiiz">Christiiz</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="5/14/2024, 5:50:54 PM" title="5/14/2024, 5:50:54 PM">5/14/2024</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div></span><div class=""><div class="entity-content"><p>😦</p></div></div></div></div><div class="Reply_reply__HFNXA" data-testid="article-comments__reply" data-reply-id="4400000000000178627"><div class="Reply_body__PM9kM"><span><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:TheStooplyDog"><img src="https://static.wikia.nocookie.net/810b0c9d-f9ab-4981-9944-1345574e706c" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:TheStooplyDog">TheStooplyDog</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="5/24/2024, 11:11:44 AM" title="5/24/2024, 11:11:44 AM">5/24/2024</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div></span><div class=""><div class="entity-content"><p>Why?</p></div></div></div></div><div class="Reply_reply__HFNXA" data-testid="article-comments__reply" data-reply-id="4400000000000179012"><div class="Reply_body__PM9kM"><span><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:EryxTheWhore"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="1em" height="1em" class="wds-avatar__image" data-testid="Avatar__image-placeholder"><defs><path id="IconAvatar__a" d="M12 11c-.965 0-1.75-.785-1.75-1.75S11.035 7.5 12 7.5s1.75.785 1.75 1.75S12.965 11 12 11m0-5.5a3.754 3.754 0 00-3.75 3.75A3.754 3.754 0 0012 13a3.754 3.754 0 003.75-3.75A3.754 3.754 0 0012 5.5m7.679 12.914c-1.987-2.104-4.727-3.289-7.679-3.289-2.953 0-5.692 1.185-7.679 3.289A9.955 9.955 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10a9.956 9.956 0 01-2.321 6.414M12 22a9.995 9.995 0 01-6.25-2.187c1.613-1.719 3.844-2.688 6.25-2.688s4.637.969 6.249 2.688A9.993 9.993 0 0112 22m0-22C5.383 0 0 5.383 0 12c0 3.268 1.294 6.33 3.651 8.63l.012.013A12 12 0 0012 24h.036a12.008 12.008 0 008.306-3.363C22.701 18.341 24 15.273 24 12c0-6.617-5.383-12-12-12"></path></defs><use xlink:href="#IconAvatar__a" fill-rule="evenodd"></use></svg></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:EryxTheWhore">EryxTheWhore</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="6/2/2024, 7:04:27 PM" title="6/2/2024, 7:04:27 PM">6/2/2024</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div></span><div class=""><div class="entity-content"><p>But why? He's a good character</p></div></div></div></div><div class="Reply_reply__HFNXA" data-testid="article-comments__reply" data-reply-id="4400000000000180971"><div class="Reply_body__PM9kM"><span><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:Clara123afton"><img src="https://static.wikia.nocookie.net/c65094cf-3c7e-4df0-8fcb-11c58a58b8d8" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:Clara123afton">Clara123afton</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="8/6/2024, 6:00:01 PM" title="8/6/2024, 6:00:01 PM">8/6/2024</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div></span><div class=""><div class="entity-content"><p>Why?</p></div></div></div></div></div></div></div><div class="Comment_wrapper__VysRy LockOldComments-locked" data-testid="article-comments__comment" data-thread-id="4400000000000048571"><div class="Comment_comment__50MD-"><div class="Comment_body__Dw-zH"><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:Lumine%20from%20Genshin%20REAL"><img src="https://static.wikia.nocookie.net/1308ba56-98ca-4bf3-9662-f7b58f763bee" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:Lumine%20from%20Genshin%20REAL">Lumine from Genshin REAL</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="4/3/2024, 1:30:50 PM" title="4/3/2024, 1:30:50 PM">4/3/2024</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div><div class=""><div class="entity-content"><p>I love youuuuuuuuu</p></div></div></div></div><div class="ReplyList_container__bj-35"></div></div><div class="Comment_wrapper__VysRy LockOldComments-locked" data-testid="article-comments__comment" data-thread-id="4400000000000045451"><div class="Comment_comment__50MD-"><div class="Comment_body__Dw-zH"><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:Mixhalia"><img src="https://static.wikia.nocookie.net/1672cc42-ef0a-45ed-9ca6-96e69d74329c" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:Mixhalia">Mixhalia</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="9/8/2023, 2:33:34 AM" title="9/8/2023, 2:33:34 AM">9/8/2023</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div><div class=""><div class="entity-content"><p>He is so cute I wanna squish his cheeks!!</p></div></div></div></div><div class="ReplyList_container__bj-35"></div></div><div class="Comment_wrapper__VysRy LockOldComments-locked" data-testid="article-comments__comment" data-thread-id="4400000000000043062"><div class="Comment_comment__50MD-"><div class="Comment_body__Dw-zH"><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:Ballstrider"><img src="https://static.wikia.nocookie.net/5c225ea7-700f-44b0-889a-63c564d4a94a" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:Ballstrider">Ballstrider</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="2/24/2023, 11:54:36 PM" title="2/24/2023, 11:54:36 PM">2/24/2023</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div><div class=""><div class="entity-content"><p>he is so gender</p></div></div></div></div><div class="ReplyList_container__bj-35"><span class="ReplyList_top-border__fIxR2"></span><div class="ReplyList_list-wrapper__cuHYs"><div class="Reply_reply__HFNXA" data-testid="article-comments__reply" data-reply-id="4400000000000152481"><div class="Reply_body__PM9kM"><span><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:AmariNaoto"><img src="https://static.wikia.nocookie.net/08a089c4-e912-4aeb-abc1-b770dce87fe7" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:AmariNaoto">AmariNaoto</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="4/19/2023, 1:55:01 PM" title="4/19/2023, 1:55:01 PM">4/19/2023</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div></span><div class=""><div class="entity-content"><p>I wanna squish him and throw him against the wall like a sticky hand (complimentary)</p></div></div></div></div><div class="Reply_reply__HFNXA" data-testid="article-comments__reply" data-reply-id="4400000000000153058"><div class="Reply_body__PM9kM"><span><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:VeryCoolUsernameHere"><img src="https://static.wikia.nocookie.net/335ca3ae-14a8-4456-948a-25c615b79f74" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:VeryCoolUsernameHere">VeryCoolUsernameHere</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="5/1/2023, 3:14:02 AM" title="5/1/2023, 3:14:02 AM">5/1/2023</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div></span><div class=""><div class="entity-content"><p>Real</p></div></div></div></div></div></div></div><div class="Comment_wrapper__VysRy LockOldComments-locked" data-testid="article-comments__comment" data-thread-id="4400000000000042158"><div class="Comment_comment__50MD-"><div class="Comment_body__Dw-zH"><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:BeautifulLolitaGirl"><img src="https://static.wikia.nocookie.net/07737ac5-5421-4552-aa45-ec4b92618232" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:BeautifulLolitaGirl">BeautifulLolitaGirl</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="12/30/2022, 4:00:39 AM" title="12/30/2022, 4:00:39 AM">12/30/2022</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div><div class=""><div class="entity-content"><p>One of my favourites.</p></div></div></div></div><div class="ReplyList_container__bj-35"></div></div><div class="Comment_wrapper__VysRy LockOldComments-locked" data-testid="article-comments__comment" data-thread-id="4400000000000042061"><div class="Comment_comment__50MD-"><div class="Comment_body__Dw-zH"><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:Mixhalia"><img src="https://static.wikia.nocookie.net/1672cc42-ef0a-45ed-9ca6-96e69d74329c" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:Mixhalia">Mixhalia</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="12/19/2022, 2:57:57 AM" title="12/19/2022, 2:57:57 AM">12/19/2022</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div><div class=""><div class="entity-content"><p>Best boi 💗💗</p></div></div></div></div><div class="ReplyList_container__bj-35"></div></div><div class="Comment_wrapper__VysRy LockOldComments-locked" data-testid="article-comments__comment" data-thread-id="4400000000000041304"><div class="Comment_comment__50MD-"><div class="Comment_body__Dw-zH"><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:Spring7127"><img src="https://static.wikia.nocookie.net/18d2dd37-5e6a-46da-8301-4e4e400461a4" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:Spring7127">Spring7127</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="9/22/2022, 5:21:50 AM" title="9/22/2022, 5:21:50 AM">9/22/2022</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div><div class=""><div class="entity-content"><p>I hate to be the one to off my head. At the first chapter, I despised this SOB.</p></div></div></div></div><div class="ReplyList_container__bj-35"></div></div><div class="Comment_wrapper__VysRy LockOldComments-locked" data-testid="article-comments__comment" data-thread-id="4400000000000041162"><div class="Comment_comment__50MD-"><div class="Comment_body__Dw-zH"><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:Arashi%20Sato"><img src="https://static.wikia.nocookie.net/4a366148-de46-4acd-836e-6f29b282bd4f" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:Arashi%20Sato">Arashi Sato</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="9/7/2022, 10:08:14 PM" title="9/7/2022, 10:08:14 PM">9/7/2022</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div><div class=""><div class="entity-content"><p>Tsukasa suou disney-fied</p></div></div></div></div><div class="ReplyList_container__bj-35"><span class="ReplyList_top-border__fIxR2"></span><div class="ReplyList_list-wrapper__cuHYs"><div class="Reply_reply__HFNXA" data-testid="article-comments__reply" data-reply-id="4400000000000141648"><div class="Reply_body__PM9kM"><span><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:Incognico25"><img src="https://static.wikia.nocookie.net/9d745cad-dbb6-46e6-b0cc-2728326b2ebb" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:Incognico25">Incognico25</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="9/21/2022, 5:29:47 PM" title="9/21/2022, 5:29:47 PM">9/21/2022</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div></span><div class=""><div class="entity-content"><p>I WAS ABOUT TO COMMENT THAT LMFAO</p></div></div></div></div><div class="Reply_reply__HFNXA" data-testid="article-comments__reply" data-reply-id="4400000000000141649"><div class="Reply_body__PM9kM"><span><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:Arashi%20Sato"><img src="https://static.wikia.nocookie.net/4a366148-de46-4acd-836e-6f29b282bd4f" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:Arashi%20Sato">Arashi Sato</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="9/21/2022, 5:51:23 PM" title="9/21/2022, 5:51:23 PM">9/21/2022</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div></span><div class=""><div class="entity-content"><p>HELP</p></div></div></div></div></div></div></div><div class="Comment_wrapper__VysRy LockOldComments-locked" data-testid="article-comments__comment" data-thread-id="4400000000000041071"><div class="Comment_comment__50MD-"><div class="Comment_body__Dw-zH"><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:Tastaye"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="1em" height="1em" class="wds-avatar__image" data-testid="Avatar__image-placeholder"><defs><path id="IconAvatar__a" d="M12 11c-.965 0-1.75-.785-1.75-1.75S11.035 7.5 12 7.5s1.75.785 1.75 1.75S12.965 11 12 11m0-5.5a3.754 3.754 0 00-3.75 3.75A3.754 3.754 0 0012 13a3.754 3.754 0 003.75-3.75A3.754 3.754 0 0012 5.5m7.679 12.914c-1.987-2.104-4.727-3.289-7.679-3.289-2.953 0-5.692 1.185-7.679 3.289A9.955 9.955 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10a9.956 9.956 0 01-2.321 6.414M12 22a9.995 9.995 0 01-6.25-2.187c1.613-1.719 3.844-2.688 6.25-2.688s4.637.969 6.249 2.688A9.993 9.993 0 0112 22m0-22C5.383 0 0 5.383 0 12c0 3.268 1.294 6.33 3.651 8.63l.012.013A12 12 0 0012 24h.036a12.008 12.008 0 008.306-3.363C22.701 18.341 24 15.273 24 12c0-6.617-5.383-12-12-12"></path></defs><use xlink:href="#IconAvatar__a" fill-rule="evenodd"></use></svg></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:Tastaye">Tastaye</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="8/29/2022, 10:12:01 PM" title="8/29/2022, 10:12:01 PM">8/29/2022</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div><div class=""><div class="entity-content"><p>My beloved</p></div></div></div></div><div class="ReplyList_container__bj-35"></div></div><div class="Comment_wrapper__VysRy LockOldComments-locked" data-testid="article-comments__comment" data-thread-id="4400000000000039667"><div class="Comment_comment__50MD-"><div class="Comment_body__Dw-zH"><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:Manman0123"><img src="https://static.wikia.nocookie.net/b364c20d-d8d3-44c8-bc8f-298faa13a0c4" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:Manman0123">Manman0123</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="4/2/2022, 5:56:56 AM" title="4/2/2022, 5:56:56 AM">4/2/2022</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div><div class=""><div class="entity-content"><p>He looks like my child</p></div></div></div></div><div class="ReplyList_container__bj-35"></div></div><div class="Comment_wrapper__VysRy LockOldComments-locked" data-testid="article-comments__comment" data-thread-id="4400000000000039241"><div class="Comment_comment__50MD-"><div class="Comment_body__Dw-zH"><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:1Luzus1"><img src="https://static.wikia.nocookie.net/0331bb41-2fa5-46d9-a448-47897d68fad5" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:1Luzus1">1Luzus1</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="3/6/2022, 8:00:28 AM" title="3/6/2022, 8:00:28 AM">3/6/2022</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div><div class=""><div class="entity-content"><p>I lov</p></div></div></div></div><div class="ReplyList_container__bj-35"></div></div><div class="Comment_wrapper__VysRy LockOldComments-locked" data-testid="article-comments__comment" data-thread-id="4400000000000038481"><div class="Comment_comment__50MD-"><div class="Comment_body__Dw-zH"><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:Scalesfern7"><img src="https://static.wikia.nocookie.net/1d96cdaa-7dcf-4264-9953-0eb1600138a2" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:Scalesfern7">Scalesfern7</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="1/27/2022, 4:08:00 AM" title="1/27/2022, 4:08:00 AM">1/27/2022</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div><div class=""><div class="entity-content"><p>He has the cutest expressions, especially his annoyed and bewildered expressions.</p><p>And dat smile. Must protecc.</p></div></div></div></div><div class="ReplyList_container__bj-35"></div></div><div class="Comment_wrapper__VysRy LockOldComments-locked" data-testid="article-comments__comment" data-thread-id="4400000000000037289"><div class="Comment_comment__50MD-"><div class="Comment_body__Dw-zH"><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:Nuggets2"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="1em" height="1em" class="wds-avatar__image" data-testid="Avatar__image-placeholder"><defs><path id="IconAvatar__a" d="M12 11c-.965 0-1.75-.785-1.75-1.75S11.035 7.5 12 7.5s1.75.785 1.75 1.75S12.965 11 12 11m0-5.5a3.754 3.754 0 00-3.75 3.75A3.754 3.754 0 0012 13a3.754 3.754 0 003.75-3.75A3.754 3.754 0 0012 5.5m7.679 12.914c-1.987-2.104-4.727-3.289-7.679-3.289-2.953 0-5.692 1.185-7.679 3.289A9.955 9.955 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10a9.956 9.956 0 01-2.321 6.414M12 22a9.995 9.995 0 01-6.25-2.187c1.613-1.719 3.844-2.688 6.25-2.688s4.637.969 6.249 2.688A9.993 9.993 0 0112 22m0-22C5.383 0 0 5.383 0 12c0 3.268 1.294 6.33 3.651 8.63l.012.013A12 12 0 0012 24h.036a12.008 12.008 0 008.306-3.363C22.701 18.341 24 15.273 24 12c0-6.617-5.383-12-12-12"></path></defs><use xlink:href="#IconAvatar__a" fill-rule="evenodd"></use></svg></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:Nuggets2">Nuggets2</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="10/28/2021, 12:08:39 AM" title="10/28/2021, 12:08:39 AM">10/28/2021</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div><div class=""><div class="entity-content"><p>A beautiful boy has caught my attention and I must give him love.</p></div></div></div></div><div class="ReplyList_container__bj-35"></div></div><div class="Comment_wrapper__VysRy LockOldComments-locked" data-testid="article-comments__comment" data-thread-id="4400000000000036504"><div class="Comment_comment__50MD-"><div class="Comment_body__Dw-zH"><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:Lowzhiqi"><img src="https://static.wikia.nocookie.net/7435cb10-13f5-48d2-a643-ad2ac5aa9ced" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:Lowzhiqi">Lowzhiqi</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="8/23/2021, 7:00:01 PM" title="8/23/2021, 7:00:01 PM">8/23/2021</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div><div class=""><div class="entity-content"><p>Happy Birthday, Riddle!</p></div></div></div></div><div class="ReplyList_container__bj-35"></div></div><div class="Comment_wrapper__VysRy LockOldComments-locked" data-testid="article-comments__comment" data-thread-id="4400000000000034179"><div class="Comment_comment__50MD-"><div class="Comment_body__Dw-zH"><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:Renaisaibancirculation21"><img src="https://static.wikia.nocookie.net/f427e18d-b0be-440d-aa25-76d5d7f5c0b0" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:Renaisaibancirculation21">Renaisaibancirculation21</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="5/10/2021, 7:18:15 AM" title="5/10/2021, 7:18:15 AM">5/10/2021</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div><div class=""><div class="entity-content"><p>Hiyori Tomoe saying "OFFU WITHU YORU HEADO" ?</p></div></div></div></div><div class="ReplyList_container__bj-35"><span class="ReplyList_top-border__fIxR2"></span><div class="ReplyList_list-wrapper__cuHYs"><div class="Reply_reply__HFNXA" data-testid="article-comments__reply" data-reply-id="4400000000000110545"><div class="Reply_body__PM9kM"><span><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:Gasterrific"><img src="https://static.wikia.nocookie.net/501447f3-e3eb-4ba5-b404-43c795c9e6c0" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:Gasterrific">Gasterrific</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="6/5/2021, 9:04:47 AM" title="6/5/2021, 9:04:47 AM">6/5/2021</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div></span><div class=""><div class="entity-content"><p>riddle saying "ii hiyori"</p></div></div></div></div></div></div></div><div class="Comment_wrapper__VysRy LockOldComments-locked" data-testid="article-comments__comment" data-thread-id="4400000000000033445"><div class="Comment_comment__50MD-"><div class="Comment_body__Dw-zH"><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:Riddle-widdle-waddle"><img src="https://static.wikia.nocookie.net/28910e68-8b68-4623-b46c-9ad706c84973" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:Riddle-widdle-waddle">Riddle-widdle-waddle</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="4/9/2021, 6:07:58 AM" title="4/9/2021, 6:07:58 AM">4/9/2021</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div><div class=""><div class="entity-content"><p>He's so cute!! With his wonky ahoge!! 💗💗</p></div></div></div></div><div class="ReplyList_container__bj-35"></div></div><div class="Comment_wrapper__VysRy LockOldComments-locked" data-testid="article-comments__comment" data-thread-id="4400000000000033355"><div class="Comment_comment__50MD-"><div class="Comment_body__Dw-zH"><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:Mixhalia"><img src="https://static.wikia.nocookie.net/1672cc42-ef0a-45ed-9ca6-96e69d74329c" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:Mixhalia">Mixhalia</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="4/6/2021, 6:20:35 AM" title="4/6/2021, 6:20:35 AM">4/6/2021</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div><div class=""><div class="entity-content"><p>If Ciel Phantomhive, Tsukasa Suou, and Kujo Tenn were to have a baby it would be Riddle Rosehearts.</p></div></div></div></div><div class="ReplyList_container__bj-35"><span class="ReplyList_top-border__fIxR2"></span><div class="ReplyList_list-wrapper__cuHYs"><div class="Reply_reply__HFNXA" data-testid="article-comments__reply" data-reply-id="4400000000000096577"><div class="Reply_body__PM9kM"><span><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:Riddle-widdle-waddle"><img src="https://static.wikia.nocookie.net/28910e68-8b68-4623-b46c-9ad706c84973" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:Riddle-widdle-waddle">Riddle-widdle-waddle</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="4/9/2021, 6:05:28 AM" title="4/9/2021, 6:05:28 AM">4/9/2021</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div></span><div class=""><div class="entity-content"><p>Riddle is baby</p></div></div></div></div><div class="Reply_reply__HFNXA" data-testid="article-comments__reply" data-reply-id="4400000000000096594"><div class="Reply_body__PM9kM"><span><div class="EntityHeader_entity-header__RNUeH"><span class="EntityHeader_header-details__-lQuR"><div class="wds-avatar EntityHeader_avatar__5xZ8w"><a href="/wiki/User:Supremefishcakes"><img src="https://static.wikia.nocookie.net/05d4defd-7c28-476e-9156-e5952c730078" alt="User avatar" title="User avatar" class="wds-avatar__image" loading="lazy"></a></div><a class="EntityHeader_name__PAxYW" href="/wiki/User:Supremefishcakes">Supremefishcakes</a><span class="EntityHeader_middot__39-65">·</span><span><time datetime="4/9/2021, 7:11:51 AM" title="4/9/2021, 7:11:51 AM">4/9/2021</time></span></span><div class="wds-dropdown ActionDropdown_action-dropdown__xKyzE"><div class="wds-dropdown__toggle" role="button" aria-label="More"><span></span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em" class="wds-icon wds-icon-small wds-dropdown__toggle-chevron"><defs><path id="IconMoreSmall__a" d="M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2"></path></defs><use xlink:href="#IconMoreSmall__a" fill-rule="evenodd"></use></svg></div><div class="wds-dropdown__content wds-is-not-scrollable"><ul class="ActionDropdown_list__NLhpP"><li class="ActionItem_action-item__dll5i"><svg class="wds-icon ActionItem_icon__ipdtI"><use xlink:href="#wds-icons-link"></use></svg>Copy Link</li></ul></div></div></div></span><div class=""><div class="entity-content"><p> true true</p></div></div></div></div></div></div></div><button class="LoadMoreButton_load-more__9yEV2 load-more-button">Load more comments</button></div></div></div>
-</div>
-					</div>
-				</main>
-
-
-
-
-<aside role="region" class="portable-infobox pi-background pi-border-color pi-theme-twst pi-theme-Heartslabyul pi-layout-default"><h2 class="pi-item pi-header pi-secondary-font pi-item-spacing pi-secondary-background" data-item-name="dorm"><span typeof="mw:File"><a href="https://static.wikia.nocookie.net/twisted-wonderland/images/7/73/Heartslabyul.png/revision/latest?cb=20190711002343" class="mw-file-description image" style="display: inline-block; position: relative; vertical-align: bottom; overflow: hidden;"><img src="https://static.wikia.nocookie.net/twisted-wonderland/images/7/73/Heartslabyul.png/revision/latest/scale-to-width-down/80?cb=20190711002343" decoding="async" loading="lazy" width="80" height="80" class="mw-file-element" data-image-name="Heartslabyul.png" data-image-key="Heartslabyul.png" data-relevant="1" style="transform: scale(1); transition: transform 0.3s ease-in-out;"><div style="position: absolute; bottom: 0px; right: 0px; width: 100%; height: 100%;"><div class="gallery-icon-container view-image"><div class="icon-container view-image" aria-label="view image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em"><defs><path id="IconImagesSmall__a" d="M11 15h-.586L3 7.586V7h8v8zm-8 0v-4.586L7.586 15H3zm9-10a1 1 0 011 1v10a1 1 0 01-1 1H2a1 1 0 01-1-1V6a1 1 0 011-1h10zm4-4a1 1 0 011 1v10a1 1 0 11-2 0V3H6a1 1 0 110-2h10z"></path></defs><use xlink:href="#IconImagesSmall__a" fill-rule="evenodd"></use></svg></div></div></div></a></span><br>[ HEARTSLABYUL DORM ]</h2>
-
-<h2 class="pi-item pi-item-spacing pi-title pi-secondary-background" data-source="name">Itoh Fujino</h2>
-
-<figure class="pi-item pi-image" data-source="image">
-	<a href="" class="image image-thumbnail" title="Heartslabyul chara riddle detail A" style="display: inline-block; position: relative; vertical-align: bottom; overflow: hidden;">
-		<img src="https://static.wikia.nocookie.net/twisted-wonderland/images/a/a5/Heartslabyul_chara_riddle_detail_A.png/revision/latest/scale-to-width-down/268?cb=20190902021047" srcset="https://static.wikia.nocookie.net/twisted-wonderland/images/a/a5/Heartslabyul_chara_riddle_detail_A.png/revision/latest/scale-to-width-down/268?cb=20190902021047 1x, https://static.wikia.nocookie.net/twisted-wonderland/images/a/a5/Heartslabyul_chara_riddle_detail_A.png/revision/latest/scale-to-width-down/536?cb=20190902021047 2x" class="pi-image-thumbnail" data-relevant="1" alt="Heartslabyul chara riddle detail A" width="270" height="346" data-image-key="Heartslabyul_chara_riddle_detail_A.png" data-image-name="Heartslabyul chara riddle detail A.png" style="transform: scale(1); transition: transform 0.3s ease-in-out;">
-		
-	<div style="position: absolute; bottom: 0px; right: 0px; width: 100%; height: 100%;"><div class="gallery-icon-container view-image"><div class="icon-container view-image" aria-label="view image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" width="1em" height="1em"><defs><path id="IconImagesSmall__a" d="M11 15h-.586L3 7.586V7h8v8zm-8 0v-4.586L7.586 15H3zm9-10a1 1 0 011 1v10a1 1 0 01-1 1H2a1 1 0 01-1-1V6a1 1 0 011-1h10zm4-4a1 1 0 011 1v10a1 1 0 11-2 0V3H6a1 1 0 110-2h10z"></path></defs><use xlink:href="#IconImagesSmall__a" fill-rule="evenodd"></use></svg></div></div></div></a>
-	
-</figure>
-
-	<section class="pi-item pi-panel pi-border-color wds-tabber">
-		
-		
-			<div class="wds-tabs__wrapper"><div class="wds-tabs__arrow-left"><svg class="wds-icon wds-icon-tiny">
-<use href="#wds-icons-menu-control-tiny"></use>
-</svg></div>
-				<ul class="wds-tabs">
-					
-						<li class="wds-tabs__tab wds-is-current">
-							<div class="wds-tabs__tab-label">
-								Bio
-							</div>
-						</li>
-					
-						<li class="wds-tabs__tab">
-							<div class="wds-tabs__tab-label">
-								School
-							</div>
-						</li>
-					
-						<li class="wds-tabs__tab">
-							<div class="wds-tabs__tab-label">
-								Preferences
-							</div>
-						</li>
-					
-				</ul>
-			<div class="wds-tabs__arrow-right"><svg class="wds-icon wds-icon-tiny">
-<use href="#wds-icons-menu-control-tiny"></use>
-</svg></div></div>
-			<div class="wds-tab__content wds-is-current">
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="japanese">
-		<h3 class="pi-data-label pi-secondary-font">Japanese</h3>	
-	<div class="pi-data-value pi-font"><span><span lang="ja">リドル・ローズハート</span></span><br><small>Ridoru Rōzuhāto</small></div>
-</div>
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="birthday">
-		<h3 class="pi-data-label pi-secondary-font">Birthday</h3>
-	<div class="pi-data-value pi-font">August 24&nbsp;(Virgo)</div>
-</div
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="age">	
-		<h3 class="pi-data-label pi-secondary-font">Age</h3>
-	<div class="pi-data-value pi-font">17</div>
-</div>
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="height">
-		<h3 class="pi-data-label pi-secondary-font">Height</h3>
-	<div class="pi-data-value pi-font">160 cm</div>
-</div>
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="hand">
-		<h3 class="pi-data-label pi-secondary-font">Dominant Hand</h3>	
-	<div class="pi-data-value pi-font">Right</div>
-</div>
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="homeland">
-		<h3 class="pi-data-label pi-secondary-font">Homeland</h3>
-	<div class="pi-data-value pi-font">Queendom of Roses</div>
-</div>
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="family">
-		<h3 class="pi-data-label pi-secondary-font">Family</h3>
-	<div class="pi-data-value pi-font"><ul><li>Unnamed Mother and Father</li></ul></div>
-</div>
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="voice">
-		<h3 class="pi-data-label pi-secondary-font">Voiced by</h3>
-	<div class="pi-data-value pi-font"><a href="https://en.wikipedia.org/wiki/Natsuki_Hanae" class="extiw" title="wikipedia:Natsuki Hanae">Natsuki Hanae</a><br>Miyuki Sato (child)</div>
-</div>
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="othername">	
-		<h3 class="pi-data-label pi-secondary-font">Other Name(s)</h3>	
-	<div class="pi-data-value pi-font">        				<div class="mw-collapsible mw-collapsed mw-made-collapsible" data-expandtext="+" data-collapsetext="-"><button type="button" class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" aria-expanded="false" tabindex="0"><span class="mw-collapsible-text">+</span></button><div class="mw-collapsible-content" style="display: none;">        					<ul>								<li>Red Young Master, Little Red-Headed Boy<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">[</span>1<span class="cite-bracket">]</span></a></sup> (Leona)</li>								<li>Goldfishie (Floyd)</li>								<li>Roi des Roses (Rook)</li>								<li>Mr. Impossible-to-Please, Taskmaster Riddle, Instructor Riddle, Mr. Zero EQ, Tiny Titan (Idia)</li>								<li>Teapot Tyrant (Ace, Grim)</li>								<li>Ragin’ Riddle (Grim)</li>								<li>Mr. Goody Two Shoes<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">[</span>2<span class="cite-bracket">]</span></a></sup>, Tiny Little Red-Headed Tyrant<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">[</span>3<span class="cite-bracket">]</span></a></sup> (Ace)</li>								<li>Rose-Red Tyrant<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">[</span>4<span class="cite-bracket">]</span></a></sup></li>								<li>Red-Headed Kid<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">[</span>5<span class="cite-bracket">]</span></a></sup>(Yuken)</li>																															</ul>						</div></div></div>
-</div>
-			</div>	
-			<div class="wds-tab__content">			
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="grade">
-		<h3 class="pi-data-label pi-secondary-font">Grade</h3>
-	<div class="pi-data-value pi-font">Sophomore</div>
-</div>
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="class">
-		<h3 class="pi-data-label pi-secondary-font">Class</h3>	
-	<div class="pi-data-value pi-font">Class E (No. 26)</div>
-</div>
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="club">
-		<h3 class="pi-data-label pi-secondary-font">Club</h3>
-	<div class="pi-data-value pi-font">Equestrian Club</div>
-</div>
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="best_subject">
-		<h3 class="pi-data-label pi-secondary-font">Best Subject</h3>
-	<div class="pi-data-value pi-font">Practical Magic</div>
-</div>
-			</div>	
-			<div class="wds-tab__content">				
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="hobbies">
-		<h3 class="pi-data-label pi-secondary-font">Hobbies</h3>	
-	<div class="pi-data-value pi-font">Hedgehog tending</div>
-</div>
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="pet_peeves">
-		<h3 class="pi-data-label pi-secondary-font">Pet Peeves</h3>
-	<div class="pi-data-value pi-font">Rulebreaking</div>
-</div>
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="favorite_food">	
-		<h3 class="pi-data-label pi-secondary-font">Favorite Food</h3>
-	<div class="pi-data-value pi-font">Strawberry tarts</div>
-</div>
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="least_favorite_food">
-		<h3 class="pi-data-label pi-secondary-font">Least Favorite Food</h3>
-	<div class="pi-data-value pi-font">Junk food</div>
-</div>
-<div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="talent">
-		<h3 class="pi-data-label pi-secondary-font">Talent</h3>
-	<div class="pi-data-value pi-font">Fast at crossword puzzles</div>
-</div>
-			</div>	
-	</section>
-
-
-
-</aside>
+        <!-- Footer Section -->
+        <footer class="bg-gray-800 text-white p-6 text-center shadow-inner mt-auto">
+            <div class="container mx-auto">
+                <p class="text-sm">&copy; 2025 Twisted Wonderland Fan Wiki. All rights reserved. Content is fan-made and not affiliated with Disney or Aniplex.</p>
+            </div>
+        </footer>
+    </div>
 </body>
+</html>
+
