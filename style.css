@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(35, 76, 134);
+    background-color: rgb(6, 8, 38);
     font-size: medium;
     font-family: "Franklin Gothic Medium", Arial Narrow, Arial, sans-serif;
   }
@@ -18,7 +18,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #8DC7E2;
+  background-color: ##262c36;
   overflow-x: hidden;
   padding-top: 20px;
 }
