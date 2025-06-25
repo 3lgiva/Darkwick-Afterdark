@@ -65,7 +65,7 @@ body {
 }
 
 .right {
-  width: 50%%;
+  width: -50%%;
 }
 /* Clear floats after the columns */
 .row:after {
