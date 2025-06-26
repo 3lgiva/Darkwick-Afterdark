@@ -14,10 +14,11 @@
    <link rel="stylesheet" href="style.css">
 	 <title>Afterdark at Darkwick</title>
     <style>
-        /* Custom styles to ensure Inter font is applied and provide a base */
-        body {
-             <link rel="stylesheet" href="style.css">
-		 }
+           body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #374151; /* Dark gray text */
+        }
         /* Style for the table in infobox */
         .infobox-table th, .infobox-table td {
             padding: 0.5rem 0.75rem;
@@ -33,35 +34,93 @@
         .infobox-table tr:last-child th {
             border-bottom: none; /* No border for the last row */
         }
-        }
-	      .dropdown-menu {
-            display: none; /* Hidden by default */
-            position: absolute; /* Position relative to parent LI */
-            background-color: #374151; /* Darker background for dropdown */
-            min-width: 160px; /* Minimum width for dropdown */
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1; /* Ensure it's above other content */
-            border-radius: 0.5rem; /* rounded-md */
-            padding: 0.5rem 0; /* py-2 */
-            margin-left: 100%; /* Position right of the main nav item */
-            top: 0; /* Align with the top of the parent LI */
-            white-space: nowrap; /* Prevent text wrapping */
+
+        /* Adjust body to prevent horizontal scroll caused by fixed nav on mobile before it's hidden */
+        /* and to ensure vertical scrolling for main content */
+        body {
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            display: flex; /* Make body a flex container */
+            flex-direction: row; /* Arrange children in a row */
+            min-height: 100vh; /* Ensure body takes full viewport height */
         }
 
-        .dropdown:hover .dropdown-menu {
-            display: block; /* Show on hover */
+        /* Top nav for mobile:
+           - By default, it's a flex container (display: flex) and takes full width, centered.
+           - On 'lg' screens (1024px and up), it will be hidden by `lg:hidden` in the HTML. */
+        .top-nav-mobile {
+            display: flex; /* Always show for mobile initially */
+            width: 100%;
+            justify-content: center;
         }
-
-        .dropdown-menu a {
-            color: #d1d5db; /* Light gray text for dropdown items */
-            padding: 0.5rem 1rem; /* py-2 px-4 */
-            text-decoration: none;
-            display: block;
-            transition: background-color 0.2s;
+        /* Side nav for desktop:
+           - By default, it's hidden (display: none).
+           - On 'lg' screens (1024px and up), it will be shown by `lg:flex` in the HTML. */
+        .side-nav-desktop {
+            display: none; /* Hide by default */
         }
+        @media (min-width: 1024px) { /* This media query applies specifically for 'lg' breakpoint and up */
+            .top-nav-mobile {
+                display: none; /* Hide top nav on desktop */
+            }
+            .side-nav-desktop {
+                display: flex; /* Show side nav on desktop */
+            }
+        }
+    </style>
+</head>
+<body>
 
-        .dropdown-menu a:hover {
-            background-color: #4b5563; /* Slightly lighter gray on hover */
+    <!-- Left Vertical Navigation Bar (Fixed for Desktop, hidden on small screens) -->
+    <nav class="side-nav-desktop w-64 bg-gray-800 text-gray-100 p-4 shadow-xl flex-col fixed left-0 top-0 h-full overflow-y-auto z-50">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-white mb-4">Twisted Wiki</h2>
+            <p class="text-sm text-gray-400">Discover Night Raven College</p>
+        </div>
+        <ul class="space-y-2 flex-grow">
+            <li><a href="#" class="block py-2 px-3 rounded-md hover:bg-gray-700 hover:text-white transition-colors duration-200">Home</a></li>
+            <!-- Characters Dropdown -->
+            <li class="relative dropdown">
+                <a href="#" class="block py-2 px-3 rounded-md hover:bg-gray-700 hover:text-white transition-colors duration-200">Characters</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 hover:text-white rounded-md transition-colors duration-200">Riddle Rosehearts</a></li>
+                    <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 hover:text-white rounded-md transition-colors duration-200">Leona Kingscholar</a></li>
+                    <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 hover:text-white rounded-md transition-colors duration-200">Azul Ashengrotto</a></li>
+                    <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 hover:text-white rounded-md transition-colors duration-200">Jamil Viper</a></li>
+                    <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 hover:text-white rounded-md transition-colors duration-200">Vil Schoenheit</a></li>
+                    <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 hover:text-white rounded-md transition-colors duration-200">Malleus Draconia</a></li>
+                    <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 hover:text-white rounded-md transition-colors duration-200">All Characters (A-Z)</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="block py-2 px-3 rounded-md hover:bg-gray-700 hover:text-white transition-colors duration-200">Locations & Lore</a></li>
+            <li><a href="#" class="block py-2 px-3 rounded-md hover:bg-gray-700 hover:text-white transition-colors duration-200">Spells & Magic</a></li>
+            <li><a href="#" class="block py-2 px-3 rounded-md hover:bg-gray-700 hover:text-white transition-colors duration-200">Events</a></li>
+            <li><a href="#" class="block py-2 px-3 rounded-md hover:bg-gray-700 hover:text-white transition-colors duration-200">Gallery</a></li>
+            <li><a href="#" class="block py-2 px-3 rounded-md hover:bg-gray-700 hover:text-white transition-colors duration-200">Community Portal</a></li>
+            <li><a href="#" class="block py-2 px-3 rounded-md hover:bg-gray-700 hover:text-white transition-colors duration-200">Recent Changes</a></li>
+        </ul>
+        <div class="mt-auto pt-4 border-t border-gray-700 text-center text-xs text-gray-400">
+            <p>&copy; 2025 Fan Wiki</p>
+        </div>
+    </nav>
+
+    <!-- Main Content Wrapper (pushes away from fixed nav, scrolls independently) -->
+    <div class="flex-1 flex flex-col ml-0 lg:ml-64">
+        <!-- Header for Main Content Area (Mobile nav is here) -->
+        <header class="bg-gradient-to-r from-red-800 to-red-600 text-white p-4 shadow-lg">
+            <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+                <h1 class="text-3xl font-bold mb-2 md:mb-0">Riddle Rosehearts</h1>
+                <!-- Mobile Navigation (shown on small screens only) -->
+                <!-- The `lg:hidden` class here "blocks" this navigation on large screens -->
+                <nav class="top-nav-mobile lg:hidden">
+                    <ul class="flex flex-wrap justify-center space-x-2 md:space-x-4 text-sm">
+                        <li><a href="#" class="block py-1 px-2 rounded-md hover:bg-red-700 transition-colors duration-200">Home</a></li>
+                        <li><a href="#" class="block py-1 px-2 rounded-md hover:bg-red-700 transition-colors duration-200">Characters</a></li>
+                        <li><a href="#" class="block py-1 px-2 rounded-md hover:bg-red-700 transition-colors duration-200">Locations</a></li>
+                        <li><a href="#" class="block py-1 px-2 rounded-md hover:bg-red-700 transition-colors duration-200">Community</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         }
     </style>
 </head>
