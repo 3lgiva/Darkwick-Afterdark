@@ -13,8 +13,8 @@
    <link rel="stylesheet" href="style.css">
 	 <title>Afterdark at Darkwick</title>
     <style>
-           body {
-             font-family: 'Inter', sans-serif;
+            body {
+            font-family: 'Inter', sans-serif;
             background-color: #060026; /*background*/
             color: #374151; /*  text */
         }
@@ -43,93 +43,27 @@
             min-height: 100vh; /* Ensure body takes full viewport height */
         }
 
-        /* Responsive hiding/showing for side nav vs top nav */
-        /* Top nav (hamburger and simplified links) for mobile */
+        /* Top nav for mobile:
+           - By default, it's a flex container (display: flex) and takes full width, centeblack.
+           - On 'lg' screens (1024px and up), it will be hidden by `lg:hidden` in the HTML. */
         .top-nav-mobile {
             display: flex; /* Always show for mobile initially */
-            align-items: center; /* Align items vertically */
+            width: 100%;
+            justify-content: center;
         }
-        /* Side nav for desktop */
+        /* Side nav for desktop:
+           - By default, it's hidden (display: none).
+           - On 'lg' screens (1024px and up), it will be shown by `lg:flex` in the HTML. */
         .side-nav-desktop {
             display: none; /* Hide by default */
         }
-        /* Mobile off-canvas menu */
-        .mobile-sidebar {
-            transform: translateX(-100%); /* Start off-screen to the left */
-            transition: transform 0.3s ease-out;
-        }
-        .mobile-sidebar.is-open {
-            transform: translateX(0); /* Slide into view */
-        }
-
-        @media (min-width: 1024px) { /* On large screens (lg) and up */
+        @media (min-width: 1024px) { /* This media query applies specifically for 'lg' breakpoint and up */
             .top-nav-mobile {
-                display: none; /* Hide top nav (hamburger) on desktop */
+                display: none; /* Hide top nav on desktop */
             }
             .side-nav-desktop {
                 display: flex; /* Show side nav on desktop */
             }
-            .mobile-sidebar {
-                display: none !important; /* Ensure mobile sidebar is hidden on desktop */
-            }
-        }
-
-        /* Dropdown specific styles */
-        .dropdown-menu {
-            display: none; /* Hidden by default */
-            position: absolute; /* Position relative to parent LI */
-            background-color: #374151; /* Darker background for dropdown */
-            min-width: 160px; /* Minimum width for dropdown */
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1; /* Ensure it's above other content */
-            border-radius: 0.5rem; /* rounded-md */
-            padding: 0.5rem 0; /* py-2 */
-            margin-left: 100%; /* Position right of the main nav item */
-            top: 0; /* Align with the top of the parent LI */
-            white-space: nowrap; /* Prevent text wrapping */
-        }
-        .dropdown:hover .dropdown-menu {
-            display: block; /* Show on hover */
-        }
-        .dropdown-menu a {
-            color: #d1d5db; /* Light gray text for dropdown items */
-            padding: 0.5rem 1rem; /* py-2 px-4 */
-            text-decoration: none;
-            display: block;
-            transition: background-color 0.2s;
-        }
-        .dropdown-menu a:hover {
-            background-color: #4b5563; /* Slightly lighter gray on hover */
-        }
-
-        /* Specific styles for mobile dropdown inside the off-canvas menu */
-        .mobile-sidebar .dropdown-menu {
-            position: static; /* Stack normally in mobile sidebar */
-            margin-left: 0; /* No horizontal offset */
-            width: 100%; /* Take full width of parent */
-            box-shadow: none; /* No shadow */
-            background-color: #4b5563; /* Slightly different background for nested items */
-            border-radius: 0; /* No rounding */
-            padding: 0.25rem 0;
-        }
-        .mobile-sidebar .dropdown-menu a {
-            padding-left: 2rem; /* Indent mobile dropdown items */
-        }
-        /* Mobile dropdown toggle for click */
-        .mobile-sidebar .dropdown > a {
-            position: relative;
-        }
-        .mobile-sidebar .dropdown > a::after {
-            content: '+';
-            position: absolute;
-            right: 1rem;
-            top: 50%;
-            transform: translateY(-50%);
-            transition: transform 0.2s;
-        }
-        .mobile-sidebar .dropdown.is-open > a::after {
-            content: '-';
-            transform: translateY(-50%) rotate(0deg); /* No rotation for minus */
         }
     </style>
 </head>
