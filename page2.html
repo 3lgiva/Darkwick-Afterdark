@@ -34,6 +34,35 @@
             border-bottom: none; /* No border for the last row */
         }
         }
+	      .dropdown-menu {
+            display: none; /* Hidden by default */
+            position: absolute; /* Position relative to parent LI */
+            background-color: #374151; /* Darker background for dropdown */
+            min-width: 160px; /* Minimum width for dropdown */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1; /* Ensure it's above other content */
+            border-radius: 0.5rem; /* rounded-md */
+            padding: 0.5rem 0; /* py-2 */
+            margin-left: 100%; /* Position right of the main nav item */
+            top: 0; /* Align with the top of the parent LI */
+            white-space: nowrap; /* Prevent text wrapping */
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block; /* Show on hover */
+        }
+
+        .dropdown-menu a {
+            color: #d1d5db; /* Light gray text for dropdown items */
+            padding: 0.5rem 1rem; /* py-2 px-4 */
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.2s;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #4b5563; /* Slightly lighter gray on hover */
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -44,18 +73,13 @@
             <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
                 <h1 class="text-3xl font-bold mb-2 md:mb-0">Afterdark at darkwick</h1>
                 <div class="layout">
-	</div>
-</header>
-	
-  <div class="dropdown">
-  <span class="dropdown-trigger">Menu</span>
-  <div class="dropdown-content">
-    <link rel="stylesheet" href="style.css">
-      <li><a href="index.html">Home</a></li>
+			<nav>
+	 <li><a href="index.html">Home</a></li>
       <li><a href="page2.html">Characters</a></li>
       <li><a href="page3.html">Analeigh Volcanis</a></li>
-</div>
-</div>
+			</nav>
+	</div>
+</header>
            
        
    
