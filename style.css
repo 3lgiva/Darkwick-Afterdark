@@ -5,9 +5,39 @@ body {
   }
 
 
+ {
+     <script src="https://cdn.tailwindcss.com"></script>
+   
+        .infobox-table th, .infobox-table td {
+            padding: 0.5rem 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb; /* Light border */
+        }
+        .infobox-table th {
+            width: 35%; /* Adjust width for labels */
+            font-weight: 500;
+            color: #1f2937; /* Slightly darker label text */
+        }
+        .infobox-table tr:last-child td,
+        .infobox-table tr:last-child th {
+            border-bottom: none; /* No border for the last row */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="min-h-screen flex flex-col">
 
-
-body {
+        <!-- Header Section -->
+        <header class="bg-gradient-to-r from-red-800 to-red-600 text-white p-4 shadow-lg">
+            <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+                <h1 class="text-3xl font-bold mb-2 md:mb-0">Itoh Fujino</h1>
+                <nav>
+                    <ul class=="sidenav">
+   	  	 <a href="index.html">Home Page</a>
+		  <a href="page2.html">charater</a>
+		  <a href="page3.html">Cards</a>
+            
+    
   font-family: "Lato", sans-serif;
 }
 
