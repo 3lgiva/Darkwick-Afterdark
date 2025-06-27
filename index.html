@@ -47,7 +47,7 @@
            - By default, it's a flex container (display: flex) and takes full width, centeblack.
            - On 'lg' screens (1024px and up), it will be hidden by `lg:hidden` in the HTML. */
         .top-nav-mobile {
-            display: flex; /* Always show for mobile initially */
+            display: false; /* Always show for mobile initially */
             width: 100%;
             justify-content: center;
         }
@@ -55,14 +55,14 @@
            - By default, it's hidden (display: none).
            - On 'lg' screens (1024px and up), it will be shown by `lg:flex` in the HTML. */
         .side-nav-desktop {
-            display: flex; /* Hide by default */
+            display: ture; /* Hide by default */
         }
         @media (min-width: 1024px) { /* This media query applies specifically for 'lg' breakpoint and up */
             .top-nav-mobile {
-                display: flex; /* Hide top nav on desktop */
+                display: false; /* Hide top nav on desktop */
             }
             .side-nav-desktop {
-                display: flex; /* Show side nav on desktop */
+                display: true; /* Show side nav on desktop */
             }
         }
     </style>
@@ -131,13 +131,9 @@
     <!-- Main Container for the Welcome Page Content -->
     <div class="max-w-4xl w-full bg-slate-900 rounded-xl shadow-2xl overflow-hidden mb-10 border border-slate-800">
         <!-- Header Section - Simpler overlay -->
-        <header class="relative p-8 md:p-12 text-center bg-slate-800 rounded-t-xl overflow-hidden">
             <!-- Simplified background overlay -->
             <div class="absolute inset-0 bg-blue-950 opacity-40 z-0"></div>
             <!-- Image placeholder for Tokyo skyline - Less blur -->
-            <img src="https://placehold.co/1000x300/1E293B/E2E8F0?text=Stylized+Tokyo+Skyline" 
-                 alt="Stylized Tokyo Skyline at Dusk with Supernatural Hints" 
-                 class="absolute inset-0 w-full h-full object-cover opacity-60 blur-xs z-0">
             
             <div class="relative z-10">
                 <!-- Applied simpler gradient text for cleaner look -->
