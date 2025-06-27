@@ -47,7 +47,7 @@
            - By default, it's a flex container (display: flex) and takes full width, centeblack.
            - On 'lg' screens (1024px and up), it will be hidden by `lg:hidden` in the HTML. */
         .top-nav-mobile {
-            display: hidden; /* Always show for mobile initially */
+            display: flex; /* Always show for mobile initially */
             width: 100%;
             justify-content: center;
         }
@@ -62,7 +62,7 @@
                 display: hidden; /* Hide top nav on desktop */
             }
             .side-nav-desktop {
-                display: hidden; /* Show side nav on desktop */
+                display: flex; /* Show side nav on desktop */
             }
         }
     </style>
