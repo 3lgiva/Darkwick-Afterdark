@@ -1,44 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="author" content="Eli Takamoto">
-      <title>Why is the grass sticky...</title>
-     <link rel="stylesheet" href="style.css">
-  </head>
- 
-</html>
-   <header>
-       <h1> why are you here. save yourself</h1>
-     <p> get help that's what :/ </p>
-   </header>
+<head>
+	<head>
+    <meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="test lol">
+  
+</head>
+    <meta charset="UTF-8">
+ <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for clean typography -->
+   <link rel="stylesheet" href="style.css">
+	 <title>Afterdark at Darkwick</title>
+    <style>
+            body {
+            font-family: 'Inter', sans-serif;
+            background-color: #060026; /*background*/
+            color: #374151; /*  text */
+        }
+        /* Style for the table in infobox */
+        .infobox-table th, .infobox-table td {
+            padding: 0.5rem 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb; /* Light border */
+        }
+        .infobox-table th {
+            width: 35%; /* Adjust width for labels */
+            font-weight: 500;
+            color: #1f2937; /* Slightly darker label text */
+        }
+        .infobox-table tr:last-child td,
+        .infobox-table tr:last-child th {
+            border-bottom: none; /* No border for the last row */
+        }
 
-<div class="sidenav">
-    <a href="index.html">Home Page</a>
-  <a href="page2.html">Itoh Fujino</a>
-  <a href="page3.html"> Analeigh Volcanis</a>
-</div>
+        /* Adjust body to prevent horizontal scroll caused by fixed nav on mobile before it's hidden */
+        /* and to ensure vertical scrolling for main content */
+        body {
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            display: flex; /* Make body a flex container */
+            flex-direction: row; /* Arrange children in a row */
+            min-height: 100vh; /* Ensure body takes full viewport height */
+        }
 
+        /* Top nav for mobile:
+           - By default, it's a flex container (display: flex) and takes full width, centeblack.
+           - On 'lg' screens (1024px and up), it will be hidden by `lg:hidden` in the HTML. */
+        .top-nav-mobile {
+            display: flex; /* Always show for mobile initially */
+            width: 100%;
+            justify-content: center;
+        }
+        /* Side nav for desktop:
+           - By default, it's hidden (display: none).
+           - On 'lg' screens (1024px and up), it will be shown by `lg:flex` in the HTML. */
+        .side-nav-desktop {
+            display: flex; /* Hide by default */
+        }
+        @media (min-width: 1024px) { /* This media query applies specifically for 'lg' breakpoint and up */
+            .top-nav-mobile {
+                display: flex; /* Hide top nav on desktop */
+            }
+            .side-nav-desktop {
+                display: flex; /* Show side nav on desktop */
+            }
+        }
+    </style>
+</head>
 <body>
-<div class="row">
-  <div class="column left" style="background-color:#aaa;">
-    <h2>Column 1</h2>
-    <p>for the love OF SOUP WHY ARE YOU HERE?</p>
-    <p>unless you're here because of soupy's afterdark servrer. Contiun.</p>
-    <p>If not. LEAVE</p>
-  </div>
-</div>
 
-<div class="row">
-  <div class="column right" style="background-color:#aaa;">
-    <h2>Column 2</h2>
-    <p>pelasepleaspleaspleapleasepleasplewa</p>
-  </div>
-</div>
+    <!-- Left Vertical Navigation Bar (Fixed for Desktop, hidden on small screens) -->
+    <nav class="side-nav-desktop w-64 bg-gray-800 text-gray-100 p-4 shadow-xl flex-col fixed left-0 top-0 h-full overflow-y-auto z-50">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-white mb-4">Soup Cult Afterdark</h2>
+            <p class="text-sm text-gray-400">Discover Darkwick After Closing Hours</p>
+        </div>
+        <ul class="space-y-2 flex-grow">
+            <li><a href="index.html" class="block py-2 px-3 rounded-md hover:bg-gray-700 hover:text-white transition-colors duration-200">Home</a></li>
+            <!-- Characters Dropdown -->
+            <li class="relative dropdown">
+                <a href="Sowedontgettakendown.html" class="block py-2 px-3 rounded-md hover:bg-gray-700 hover:text-white transition-colors duration-200">Notice</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Itoh.html" class="block py-2 px-4 hover:bg-gray-700 hover:text-white rounded-md transition-colors duration-200">Itoh Fujino</a></li>
+                    <li><a href="Analeigh.html" class="block py-2 px-4 hover:bg-gray-700 hover:text-white rounded-md transition-colors duration-200">Analeigh Volcanis</a></li>
+                    <li><a href="Hoshi.html" class="block py-2 px-4 hover:bg-gray-700 hover:text-white rounded-md transition-colors duration-200">Hoshi Takara</a></li>
+                    <li><a href="Mirou.html" class="block py-2 px-4 hover:bg-gray-700 hover:text-white rounded-md transition-colors duration-200">Mirou Hatanaka</a></li>
+                    <li><a href="Jewel.html" class="block py-2 px-4 hover:bg-gray-700 hover:text-white rounded-md transition-colors duration-200">Jewel</a></li>
+                    <li><a href="Tenchi.html" class="block py-2 px-4 hover:bg-gray-700 hover:text-white rounded-md transition-colors duration-200">Tenchi [redacted]</a></li>
+                    <li><a href="Daiki.html" class="block py-2 px-4 hover:bg-gray-700 hover:text-white rounded-md transition-colors duration-200">Daiki Ōbayashi</a></li>
+		    <li><a href="Isabella.html" class="block py-2 px-3 rounded-md hover:bg-gray-700 hover:text-white transition-colors duration-200">Isabella "Steveie"</a></li>
+		    <li><a href="#" class="block py-2 px-3 rounded-md hover:bg-gray-700 hover:text-white transition-colors duration-200">spacerc</a></li>
+          	    <li><a href="#" class="block py-2 px-3 rounded-md hover:bg-gray-700 hover:text-white transition-colors duration-200">spacer</a></li>
+          	    <li><a href="#" class="block py-2 px-3 rounded-md hover:bg-gray-700 hover:text-white transition-colors duration-200">spacer</a></li>
+         	    <li><a href="#" class="block py-2 px-3 rounded-md hover:bg-gray-700 hover:text-white transition-colors duration-200">spacer</a></li>
+          	    <li><a href="#" class="block py-2 px-3 rounded-md hover:bg-gray-700 hover:text-white transition-colors duration-200">spacer</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="mt-auto pt-4 border-t border-gray-700 text-center text-xs text-gray-400">
+            <p>&copy; 2025 @ Elgiva</p>
+        </div>
+    </nav>
+
+    <!-- Main Content Wrapper (pushes away from fixed nav, scrolls independently) -->
+    <div class="flex-1 flex flex-col ml-0 lg:ml-64">
+        <!-- Header for Main Content Area (Mobile nav is here) -->
+        <header class="bg-gradient-to-r from-gray-200 to-gray-100 text-gray-800 p-4 shadow-lg">
+            <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+                <h1 class="text-3xl font-bold mb-2 md:mb-0">Darkwick Afterdark</h1>
+                <!-- Mobile Navigation (shown on small screens only) -->
+                <!-- The `lg:hidden` class here "blocks" this navigation on large screens -->
+                <nav class="top-nav-mobile lg:hidden">
+                    <ul class="flex flex-wrap justify-center space-x-2 md:space-x-4 text-sm">
+                        <li><a href="index.html" class="block py-1 px-2 rounded-md hover:bg-black-700 transition-colors duration-200">Home</a></li>
+                        <li><a href="Charasheet.html" class="block py-1 px-2 rounded-md hover:bg-black-700 transition-colors duration-200">Characters</a></li>
+                        <li><a href="#" class="block py-1 px-2 rounded-md hover:bg-black-700 transition-colors duration-200">spacer</a></li>
+                        <li><a href="#" class="block py-1 px-2 rounded-md hover:bg-black-700 transition-colors duration-200">spacer</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        }
+    </style>
+
+           
+       
+   
+
+        <div class="container mx-auto p-4 lg:p-6 flex flex-col lg:flex-row gap-6 flex-grow">
+            <!-- Sidebar -->
+            <aside class="lg:w-1/4 w-full flex flex-col gap-6">
+                <!-- Table of Contents / Navigation -->
+                <div class="bg-white p-5 rounded-xl shadow-md border border-gray-200">
+                    <h2 class="text-xl font-semibold mb-4 text-gray-800">Contents</h2>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><a href="#summary" class="block py-1 px-3 rounded-md hover:bg--100 hover:text--700 transition-colors duration-200">1. Summary</a></li>
+			 <li><a href="#Relactionship" class="block py-1 px-3 rounded-md hover:bg--100 hover:text--700 transition-colors duration-200">2. Relactionship</a></li>
+                        <li><a href="#appearance" class="block py-1 px-3 rounded-md hover:bg--100 hover:text--700 transition-colors duration-200">3. Appearance</a></li>
+                        <li><a href="#personality" class="block py-1 px-3 rounded-md hover:bg--100 hover:text--700 transition-colors duration-200">4. Personality</a></li>
+                        <li><a href="#Stigma" class="block py-1 px-3 rounded-md hover:bg--100 hover:text--700 transition-colors duration-200">5. Stigma & Abilities</a></li>
+                        <li><a href="#background" class="block py-1 px-3 rounded-md hover:bg--100 hover:text--700 transition-colors duration-200">6. Background</a></li>
+                        <li><a href="#trivia" class="block py-1 px-3 rounded-md hover:bg--100 hover:text--700 transition-colors duration-200">7. Trivia</a></li>
+                        <li><a href="#gallery" class="block py-1 px-3 rounded-md hover:bg-black-100 hover:text-black-700 transition-colors duration-200">8. Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Character Infobox -->
+                <div class="bg-white p-5 rounded-xl shadow-md border border-gray-200">
+                    <h2 class="text-2xl font-bold text-center mb-4 text-black-700">Itoh Fujino</h2>
+			 <img src="ItohHeadshot.png" alt="Itoh Fujino"
+                             class="w-100 h-120 mx-auto rounded-lg shadow-md border-2 border-gray-300 object-cover mb-4">
+                    <div class="text-center mb-4">
+                        <!-- Placeholder image -->
+                        
+                    </div>
+                    <table class="infobox-table w-full text-sm">
+                        <tbody>
+			     <tr>
+                                <h><i>"May everlasting <strong>fate</strong> be with you, because nobody else on this Earth will be."</i></h>
+                            </tr>
+                            <tr>
+                                <th>House</th>
+                                <td>Hotarubi</td>
+                            </tr>
+                            <tr>
+                                <th>Gender</th>
+                                <td>Female</td>
+                            </tr>
+			    <tr>
+                                <th>Year</th>
+                                <td>2nd</td>
+                            </tr>
+                            <tr>
+                                <th>Birthday</th>
+                                <td>bitch idk, hottub?</td>
+                            </tr>
+                            <tr>
+                                <th>Star Sign</th>
+                                <td>questionable as i don't even know my own oc brithday :/</td>
+                            </tr>
+                            <tr>
+                                <th>Homeland</th>
+                                <td>the East (Mainland china)</td>
+                            </tr>
+                            <tr>
+                                <th>Like</th>
+                                <td>Tea. Both kind of tea.</td>
+                            </tr>
+                            <tr>
+                                <th>Class</th>
+                                <td>Ghoul</td>
+                            </tr>
+                            <tr>
+                                <th>Special Artifact</th>
+                                <td>uh, what's those flat fans called? Not the folding ones but like, circle with a stick.</td>
+                            </tr>
+                            <tr>
+                                <th>stigma</th>
+                                <td>Manducias  (Mh-duck-u-aa)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="lg:w-3/4 w-full bg-white p-6 rounded-xl shadow-md border border-gray-200">
+                <section id="summary" class="mb-8">
+                    <h2 class="text-3xl font-bold text-black-700 mb-4 pb-2 border-b border-black-200">Summary</h2>
+                    <p class="mb-4 leading-relaxed"><i>“Sinostra’s loss or Hotarubi’s liability? One wonders what secrets she smuggled across the border. But with skills like her, perhaps even the shadows wanted her gone.”</i>- Chancellor Cornelius </p>
+                    <p class="leading-relaxed">Itoh Fujino, a second-year student from House Hotarubi, once belonged to the secretive and scandal-prone Sinostra. Though little is said outright, whispers of betrayal and forbidden knowledge linger in her wake.</p>
+		<p class="leading-relaxed">She’s a figure of calm defiance—too useful to discard, too enigmatic to trust completely. Whether sipping tea with captains or vanishing into Rui’s bar shadows, Itoh is always gathering more than she lets on. Some said her last name "Fujino" is only a decoy, and not her real family name.</p>
+                </section>
+
+		 <section id="Relactionship" class="mb-8">
+                    <h2 class="text-3xl font-bold text-black-700 mb-4 pb-2 border-b border-black-200">Relactionship</h2>
+                    <ul class="list-disc list-inside space-y-2 pl-4 leading-relaxed">
+                        <li><strong>Subaru Kagami</strong>: Captain of the current house Itoh is staying in. Periodically share teas and discuss favors of each leaf.</li>
+                        <li><strong>Haku Kusanagi</strong>: Vice-captain of the current house Itoh is staying in. Itohs helps Haku with repairs around the house.</li>
+                        <li><strong>Romeo S. Lucci</strong>: The Vice-captain of the house Itoh used to stay in. Was one of Fico’s loyalists before transferring to Hotarubi. After leaving Sinostra, sometimes run into him at Rui’s bar.</li>
+                        <li><strong>Tagia Hoshibami</strong>: Captain of the house Itoh used to stay in. Did not interact and avoided at all cost.</li>
+                        <li><strong>Rui Mizuki</strong>: Drops by the bar Rui runs once in a while.</li>
+			<li><strong>Haru Sagara</strong>: Runs into Haru at Rui’s bar; sometime comes over to Jabberwock to meditate.</li>
+                    </ul>
+                </section>
+
+                <section id="appearance" class="mb-8">
+                    <h2 class="text-3xl font-bold text-black-700 mb-4 pb-2 border-b border-black-200">Appearance</h2>
+			<img src="RItohF.png" alt="Itoh Fujino"
+                         class="float-right ml-4 mb-4 w-full max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[280px] xl:max-w-[320px] rounded-lg shadow-md border-2 border-gray-300"
+                    <p class="mb-4 leading-relaxed">Itoh Fujino’s appearance walks the delicate line between deliberate understatement and ghostly presence. She stands at 163 cm with a frame that seems to drift rather than walk, her weight distributed with a grace that makes her movements appear rehearsed by shadow. Her eyes—gray with a violet tint—rarely blink, and when they do, it feels theatrical.</p>
+                    <p class="leading-relaxed">She favors simple uniforms tailored to immaculate precision, often with an added flourish like a dark silk ribbon. There’s always a faint floral scent clinging to her—subtle, bitter-sweet—like belladonna left to dry in a pressed book. When she smiles, it never quite reaches her eyes—but it always means something.</p>
+                </section>
+
+                <section id="personality" class="mb-8">
+                    <h2 class="text-3xl font-bold text-black-700 mb-4 pb-2 border-b border-black-200">Personality</h2>
+                    <p class="mb-4 leading-relaxed">Quiet and calculating, Itoh rarely speaks unless she must—and when she does, it’s often more revealing than intended. Known for her haunting composure, she’s perceptive to the point of unsettling. She isn’t unkind, but warmth is never her currency. She honors favors, navigates friction with grace, and can become fiercely loyal to those who earn her regard. Still, most feel that she’s always one layer deeper than she appears.</p>
+                    <p class="leading-relaxed">With a silence that cloaks more than it reveals, Itoh Fujino moves through the world like mist—deliberate, elusive, and never quite where one expects. Her words, rare and carefully chosen, tend to echo long after they’re spoken, laced with observations so precise they border on invasive. There’s a chill to her presence, not from cruelty, but from a refusal to perform affection where it isn’t earned. Favors, once traded, are honored like sacred pacts, and for the fortunate few who breach her defenses, loyalty becomes an unspoken fortress. Yet even then, there’s always the sense that part of Itoh remains submerged—watching, thinking, and perhaps already one step ahead.</p>
+                </section>
+
+                <section id="Stigma" class="mb-8">	
+                    <h2 class="text-3xl font-bold text-black-700 mb-4 pb-2 border-b border-black-200">Stigma & Abilities</h2>
+                    <p class="mb-4 leading-relaxed">Itoh's Stigma is <strong class="text-black-600">"Manduclas"</strong>,project thoughts and emotions directly into another’s mind—but only within close proximity. The ability is eerie in its intimacy and incblackibly effective in tense encounters or stealth missions.</p>
+                    <ul class="list-disc list-inside space-y-2 mb-4 pl-4 leading-relaxed">
+                        <li><strong>Note:</strong> It’s rumored that she once silenced an argument across a room with a single mental phrase. Whether it’s a gift of empathy or a weapon of coercion depends entirely on how she uses it.</li>
+                        <li><strong>Pros:</strong> spacer</li>
+                        <li><strong>Cons:</strong> spacer</li>
+                    </ul>
+                </section>
+
+                <section id="background" class="mb-8">
+                    <h2 class="text-3xl font-bold text-black-700 mb-4 pb-2 border-b border-black-200">Background</h2>
+                    <p class="mb-4 leading-relaxed"></p>
+                    <p class="leading-relaxed"></p>
+                </section>
+
+                <section id="trivia" class="mb-8">
+                    <h2 class="text-3xl font-bold text-black-700 mb-4 pb-2 border-b border-black-200">Trivia</h2>
+                    <ul class="list-disc list-inside space-y-2 pl-4 leading-relaxed">
+                        <li>Her favorite tea to share with Subaru is osmanthus oolong—a subtly floral blend with hidden depth.</li>
+                        <li>Though she helps Haku with repairs, she has no mechanical talent; she just likes the quiet company.</li>
+                        <li>She hums faint, unfamiliar melodies when she's focused—no one's been able to trace the origin.</li>
+                        <li>Her dorm room is immaculately ordered, but she leaves one drawer intentionally locked and dusty.</li>
+                        <li>Students from Sinostra refer to her in hushed tones as “The Whisper That Left.”</li>
+			<li>Keeps a pressed belladonna flower tucked in her notebook</li>
+                    </ul>
+                </section>
+		
 
 
-<div>
-    <p>testing testinhuegfskjldfhiayodsgufhi page 1g</p>
-    <p>please work</p>
-</div>
+                <section id="gallery" class="mb-8">
+                    <h2 class="text-3xl font-bold text-black-700 mb-4 pb-2 border-b border-black-200">Gallery</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <img src="https://placehold.co/400x300/8B0000/FFFFFF?text=Itoh+Art+1" alt="Itoh Art 1" class="w-full h-auto rounded-lg shadow-md border border-gray-300 transform transition-transform duration-300 hover:scale-105">
+                        <img src="https://placehold.co/400x300/CC0000/FFFFFF?text=Itoh+Art+2" alt="Itoh Art 2" class="w-full h-auto rounded-lg shadow-md border border-gray-300 transform transition-transform duration-300 hover:scale-105">
+                        <img src="https://placehold.co/400x300/AA0000/FFFFFF?text=Itoh+Art+3" alt="Itoh Art 3" class="w-full h-auto rounded-lg shadow-md border border-gray-300 transform transition-transform duration-300 hover:scale-105">
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="bg-gray-800 text-white p-6 text-center shadow-inner mt-auto">
+            <div class="container mx-auto">
+                <p class="text-sm">&copy; 2025 Soup Afterdark Sever. All right reserver for that unholy server. srsly, y'all need help... </p>
+            </div>
+        </footer>
+    </div>
 </body>
+</html>
