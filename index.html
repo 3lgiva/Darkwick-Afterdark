@@ -47,7 +47,7 @@
            - By default, it's a flex container (display: flex) and takes full width, centeblack.
            - On 'lg' screens (1024px and up), it will be hidden by `lg:hidden` in the HTML. */
         .top-nav-mobile {
-            display: false; /* Always show for mobile initially */
+            display: none; /* Always show for mobile initially */
             width: 100%;
             justify-content: center;
         }
@@ -55,14 +55,14 @@
            - By default, it's hidden (display: none).
            - On 'lg' screens (1024px and up), it will be shown by `lg:flex` in the HTML. */
         .side-nav-desktop {
-            display: false; /* Hide by default */
+            display: none; /* Hide by default */
         }
         @media (min-width: 1024px) { /* This media query applies specifically for 'lg' breakpoint and up */
             .top-nav-mobile {
-                display: flex; /* Hide top nav on desktop */
+                display: none; /* Hide top nav on desktop */
             }
             .side-nav-desktop {
-                display: false; /* Show side nav on desktop */
+                display: none; /* Show side nav on desktop */
 	    }
     </style>
 </head>
