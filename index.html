@@ -41,16 +41,7 @@
             display: flex; /* Make body a flex container */
             flex-direction: row; /* Arrange children in a row */
             min-height: 100vh; /* Ensure body takes full viewport height */
-        }
 
-        /* Top nav for mobile:
-           - By default, it's a flex container (display: flex) and takes full width, centeblack.
-           - On 'lg' screens (1024px and up), it will be hidden by `lg:hidden` in the HTML. */
-        .top-nav-mobile {
-            display: none; /* Always show for mobile initially */
-            width: 100%;
-            justify-content: center;
-        }
         /* Side nav for desktop:
            - By default, it's hidden (display: none).
            - On 'lg' screens (1024px and up), it will be shown by `lg:flex` in the HTML. */
@@ -59,9 +50,7 @@
         }
 
         @media (min-width: 1024px) { /* This media query applies specifically for 'lg' breakpoint and up */
-            .top-nav-mobile {
-                display: hide; /* Hide top nav on desktop */
-            }
+        
             .side-nav-desktop {
                 display: flex; /* Show side nav on desktop */
 	    }
