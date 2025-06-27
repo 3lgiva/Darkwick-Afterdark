@@ -55,50 +55,8 @@
            - By default, it's hidden (display: none).
            - On 'lg' screens (1024px and up), it will be shown by `lg:flex` in the HTML. */
         .side-nav-desktop {
-            display: flex; /* Hide by default */
+            display: hide; /* Hide by default */
         }
-	    .side-nav-mobile {
-    		display: none;
-    		position: fixed;
-  		  top: 0;
-   		 left: 0;
-   		 width: 250px;
-   		 height: 100%;
-  		  background-color: #1f2937;
-  		  padding: 1rem;
-   		 z-index: 1000;
-  		  transition: transform 0.3s ease-in-out;
-	    }
-	    }
-
-		.side-nav-mobile.open {
- 		   display: block;
-		}
-	    <nav class="side-nav-mobile" id="side-nav-mobile">
-    <button id="close-nav">✕ Close</button>
-    <!-- Other nav content -->
-</nav>
-
-	    <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const closeNav = document.getElementById('close-nav');
-    const sideNav = document.getElementById('side-nav-mobile');
-
-    menuToggle.addEventListener('click', () => {
-        sideNav.classList.add('open');
-    });
-
-    closeNav.addEventListener('click', () => {
-        sideNav.classList.remove('open');
-    });
-
-    // Optional: auto-close on window resize
-    window.addEventListener('resize', () => {
-        if (window.innerWidth >= 1024) {
-            sideNav.classList.remove('open');
-        }
-    });
-</script>
 
         @media (min-width: 1024px) { /* This media query applies specifically for 'lg' breakpoint and up */
             .top-nav-mobile {
